@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RL Exercise Recommendation System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .result {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 15px;
+            white-space: pre-wrap;
+            font-family: monospace;
+        }
+        .exercise-card {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        .exercise-name {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .exercise-details {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🤖 RL-Based Exercise Recommendation System</h1>
+
+    <div class="container">
+        <div class="section">
+            <h2>📋 Register New User</h2>
+            <div class="form-group">
+                <label for="userId">User ID:</label>
+                <input type="text" id="userId" placeholder="e.g., john_doe">
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" placeholder="25">
+            </div>
+            <div class="form-group">
+                <label for="fitnessLevel">Fitness Level:</label>
+                <select id="fitnessLevel">
+                    <option value="BEGINNER">Beginner</option>
+                    <option value="INTERMEDIATE">Intermediate</option>
+                    <option value="ADVANCED">Advanced</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="goals">Goals (select multiple):</label>
+                <select id="goals" multiple size="4">
+                    <option value="weight_loss">Weight Loss</option>
+                    <option value="muscle_gain">Muscle Gain</option>
+                    <option value="endurance">Endurance</option>
+                    <option value="flexibility">Flexibility</option>
+                    <option value="general_fitness">General Fitness</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="availableTime">Available Time (minutes):</label>
+                <input type="number" id="availableTime" placeholder="45">
+            </div>
+            <div class="form-group">
+                <label for="equipment">Equipment Access:</label>
+                <input type="text" id="equipment" placeholder="dumbbells, barbell, bench (comma-separated)">
+            </div>
+            <button onclick="registerUser()">Register User</button>
+            <div id="registerResult" class="result" style="display: none;"></div>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Get Personalized Recommendations</h2>
+            <div class="form-group">
+                <label for="recUserId">User ID:</label>
+                <input type="text" id="recUserId" placeholder="Enter registered user ID">
+            </div>
+            <div class="form-group">
+                <label for="numRecs">Number of Recommendations:</label>
+                <input type="number" id="numRecs" value="5" min="1" max="10">
+            </div>
+            <button onclick="getRecommendations()">Get Recommendations</button>
+            <div id="recResult" class="result" style="display: none;"></div>
+        </div>
+
+        <div class="section">
+            <h2>📅 Get Personalized Workout Plan</h2>
+            <div class="form-group">
+                <label for="workoutUserId">User ID:</label>
+                <input type="text" id="workoutUserId" placeholder="Enter registered user ID">
+            </div>
+            <div class="form-group">
+                <label for="workoutDuration">Workout Duration (minutes):</label>
+                <input type="number" id="workoutDuration" value="45" min="15" max="120">
+            </div>
+            <button onclick="getWorkout()">Get Workout Plan</button>
+            <div id="workoutResult" class="result" style="display: none;"></div>
+        </div>
+
+        <div class="section">
+            <h2>📊 View All Exercises</h2>
+            <button onclick="getExercises()">Load Exercise Database</button>
+            <div id="exercisesResult" class="result" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:5000';
+
+        function showResult(elementId, content) {
+            const element = document.getElementById(elementId);
+            element.textContent = content;
+            element.style.display = 'block';
+        }
+
+        async function registerUser() {
+            const userData = {
+                user_id: document.getElementById('userId').value,
+                age: parseInt(document.getElementById('age').value),
+                fitness_level: document.getElementById('fitnessLevel').value,
+                goals: Array.from(document.getElementById('goals').selectedOptions).map(opt => opt.value),
+                available_time: parseInt(document.getElementById('availableTime').value),
+                injuries: [],
+                equipment_access: document.getElementById('equipment').value.split(',').map(e => e.trim()).filter(e => e)
+            };
+
+            try {
+                const response = await fetch(`${API_BASE}/api/users/register`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(userData)
+                });
+
+                if (response.ok) {
+                    showResult('registerResult', `✅ User "${userData.user_id}" registered successfully!\n\nProfile:\n- Age: ${userData.age}\n- Level: ${userData.fitness_level}\n- Goals: ${userData.goals.join(', ')}\n- Time: ${userData.available_time} min\n- Equipment: ${userData.equipment_access.join(', ') || 'None'}`);
+                } else {
+                    showResult('registerResult', `❌ Registration failed: ${response.status} ${response.statusText}`);
+                }
+            } catch (error) {
+                showResult('registerResult', `❌ Error: ${error.message}`);
+            }
+        }
+
+        async function getRecommendations() {
+            const userId = document.getElementById('recUserId').value;
+            const numRecs = document.getElementById('numRecs').value;
+
+            try {
+                const response = await fetch(`${API_BASE}/api/recommendations/${userId}?num_recommendations=${numRecs}`);
+
+                if (response.ok) {
+                    const data = await response.json();
+                    let result = `🎯 Personalized Recommendations for ${userId}:\n\n`;
+                    data.recommendations.forEach((rec, index) => {
+                        result += `${index + 1}. ${rec.exercise_name}\n`;
+                        result += `   Duration: ${rec.duration_minutes} min\n`;
+                        result += `   Intensity: ${rec.intensity_level}/10\n`;
+                        result += `   Calories: ${rec.calories_burned}/min\n`;
+                        result += `   Why: ${rec.rationale}\n\n`;
+                    });
+                    showResult('recResult', result);
+                } else {
+                    showResult('recResult', `❌ Failed to get recommendations: ${response.status} ${response.statusText}`);
+                }
+            } catch (error) {
+                showResult('recResult', `❌ Error: ${error.message}`);
+            }
+        }
+
+        async function getWorkout() {
+            const userId = document.getElementById('workoutUserId').value;
+            const duration = document.getElementById('workoutDuration').value;
+
+            try {
+                const response = await fetch(`${API_BASE}/api/workout/${userId}?duration=${duration}`);
+
+                if (response.ok) {
+                    const data = await response.json();
+                    let result = `📅 Personalized Workout Plan for ${userId}:\n\n`;
+                    result += `Total Duration: ${data.total_duration} minutes\n`;
+                    result += `Estimated Calories: ${data.estimated_calories}\n`;
+                    result += `Number of Exercises: ${data.exercises.length}\n\n`;
+                    result += `Exercises:\n`;
+                    data.exercises.forEach((ex, index) => {
+                        result += `${index + 1}. ${ex.exercise_name} (${ex.duration_minutes} min)\n`;
+                    });
+                    showResult('workoutResult', result);
+                } else {
+                    showResult('workoutResult', `❌ Failed to get workout: ${response.status} ${response.statusText}`);
+                }
+            } catch (error) {
+                showResult('workoutResult', `❌ Error: ${error.message}`);
+            }
+        }
+
+        async function getExercises() {
+            try {
+                const response = await fetch(`${API_BASE}/api/exercises`);
+
+                if (response.ok) {
+                    const data = await response.json();
+                    let result = `📊 Exercise Database (${data.exercises.length} exercises):\n\n`;
+                    data.exercises.forEach(exercise => {
+                        result += `🏋️ ${exercise.name}\n`;
+                        result += `   Difficulty: ${exercise.difficulty}\n`;
+                        result += `   Duration: ${exercise.duration_minutes} min\n`;
+                        result += `   Calories: ${exercise.calories_burned}/min\n`;
+                        result += `   Equipment: ${exercise.equipment_required.join(', ') || 'None'}\n\n`;
+                    });
+                    showResult('exercisesResult', result);
+                } else {
+                    showResult('exercisesResult', `❌ Failed to load exercises: ${response.status} ${response.statusText}`);
+                }
+            } catch (error) {
+                showResult('exercisesResult', `❌ Error: ${error.message}`);
+            }
+        }
+    </script>
+</body>
+</html>

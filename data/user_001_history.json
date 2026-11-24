@@ -1,0 +1,2630 @@
+{
+  "recommendation_history": [
+    {
+      "timestamp": "2025-12-07T18:20:27.840576",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.481168174269964,
+      "simulated_reward": 2.0962336348539927
+    },
+    {
+      "timestamp": "2025-12-07T18:20:27.840576",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.35724524638537,
+      "simulated_reward": 2.071449049277074
+    },
+    {
+      "timestamp": "2025-12-07T18:20:27.840576",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.564932489290559,
+      "simulated_reward": 0.7564932489290559
+    },
+    {
+      "timestamp": "2025-12-07T18:20:27.840576",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.058448117701521,
+      "simulated_reward": 0.7058448117701521
+    },
+    {
+      "timestamp": "2025-12-07T18:20:27.840576",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.910084738519708,
+      "simulated_reward": 0.6910084738519708
+    },
+    {
+      "timestamp": "2025-12-07T18:20:27.864371",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.072032402241198,
+      "simulated_reward": 2.0144064804482396
+    },
+    {
+      "timestamp": "2025-12-07T18:20:27.864371",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 3.5975838199045898,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-07T18:20:27.864371",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.681870850816335,
+      "simulated_reward": 0.7681870850816335
+    },
+    {
+      "timestamp": "2025-12-07T18:20:27.864371",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.666091234297029,
+      "simulated_reward": 0.7666091234297029
+    },
+    {
+      "timestamp": "2025-12-07T18:20:27.864371",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.251432993812907,
+      "simulated_reward": 0.7251432993812907
+    },
+    {
+      "timestamp": "2025-12-07T18:20:27.864371",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.78628642237062,
+      "simulated_reward": 0.678628642237062
+    },
+    {
+      "timestamp": "2025-12-07T18:26:33.845414",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.328590924045386,
+      "simulated_reward": 2.0657181848090773
+    },
+    {
+      "timestamp": "2025-12-07T18:26:33.845414",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.154553026932087,
+      "simulated_reward": 0.7154553026932087
+    },
+    {
+      "timestamp": "2025-12-07T18:26:33.845414",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.432388036465018,
+      "simulated_reward": 0.7432388036465019
+    },
+    {
+      "timestamp": "2025-12-07T18:26:33.845414",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.64929433825091,
+      "simulated_reward": 0.8649294338250909
+    },
+    {
+      "timestamp": "2025-12-07T18:26:33.845414",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.930314745987747,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-07T18:26:33.874084",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.4451886694526515,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-07T18:26:33.874084",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.683442546212459,
+      "simulated_reward": 0.6683442546212459
+    },
+    {
+      "timestamp": "2025-12-07T18:26:33.874084",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.156710763181067,
+      "simulated_reward": 0.7156710763181067
+    },
+    {
+      "timestamp": "2025-12-07T18:26:33.874084",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.482564254772895,
+      "simulated_reward": 0.7482564254772895
+    },
+    {
+      "timestamp": "2025-12-07T18:26:33.874084",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.518089066870656,
+      "simulated_reward": 2.1036178133741315
+    },
+    {
+      "timestamp": "2025-12-07T18:26:33.874084",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.106330992419931,
+      "simulated_reward": 0.7106330992419931
+    },
+    {
+      "timestamp": "2025-12-07T18:43:25.410879",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.434594107118315,
+      "simulated_reward": 0.8434594107118315
+    },
+    {
+      "timestamp": "2025-12-07T18:43:25.410879",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.893129602147392,
+      "simulated_reward": 0.6893129602147392
+    },
+    {
+      "timestamp": "2025-12-07T18:43:25.410879",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.954164145849115,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-07T18:43:25.410879",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.478868738439685,
+      "simulated_reward": 0.7478868738439685
+    },
+    {
+      "timestamp": "2025-12-07T18:43:25.410879",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.017949484819316,
+      "simulated_reward": 0.7017949484819316
+    },
+    {
+      "timestamp": "2025-12-07T18:43:25.497795",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.055908642537661,
+      "simulated_reward": 0.8055908642537661
+    },
+    {
+      "timestamp": "2025-12-07T18:43:25.497795",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.140468566381214,
+      "simulated_reward": 0.7140468566381214
+    },
+    {
+      "timestamp": "2025-12-07T18:43:25.497795",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.147976708749378,
+      "simulated_reward": 2.0295953417498755
+    },
+    {
+      "timestamp": "2025-12-07T18:43:25.497795",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.119236278562156,
+      "simulated_reward": 0.7119236278562157
+    },
+    {
+      "timestamp": "2025-12-07T18:43:25.497795",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.8600199666697685,
+      "simulated_reward": 0.7860019966669769
+    },
+    {
+      "timestamp": "2025-12-07T18:43:25.497795",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.485628703115852,
+      "simulated_reward": 2.0971257406231705
+    },
+    {
+      "timestamp": "2025-12-07T19:56:33.143200",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.19985824957424,
+      "simulated_reward": 0.8199858249574239
+    },
+    {
+      "timestamp": "2025-12-07T19:56:33.143200",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.450166066096693,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-07T19:56:33.143200",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.34000680968542,
+      "simulated_reward": 0.634000680968542
+    },
+    {
+      "timestamp": "2025-12-07T19:56:33.143200",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.381729047574032,
+      "simulated_reward": 0.6381729047574032
+    },
+    {
+      "timestamp": "2025-12-07T19:56:33.143200",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.273901129432033,
+      "simulated_reward": 0.7273901129432032
+    },
+    {
+      "timestamp": "2025-12-07T19:56:33.170434",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.592173706128287,
+      "simulated_reward": 0.7592173706128287
+    },
+    {
+      "timestamp": "2025-12-07T19:56:33.170434",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.852330702679382,
+      "simulated_reward": 2.1704661405358765
+    },
+    {
+      "timestamp": "2025-12-07T19:56:33.170434",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 5.714863728247317,
+      "simulated_reward": 0.5714863728247317
+    },
+    {
+      "timestamp": "2025-12-07T19:56:33.170434",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.337322924109265,
+      "simulated_reward": 0.7337322924109265
+    },
+    {
+      "timestamp": "2025-12-07T19:56:33.170434",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.911710988095727,
+      "simulated_reward": 0.7911710988095727
+    },
+    {
+      "timestamp": "2025-12-07T19:56:33.170434",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.043963085380676,
+      "simulated_reward": 2.008792617076135
+    },
+    {
+      "timestamp": "2025-12-11T14:20:11.929048",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.983449578544068,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T14:20:11.929048",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.096175366467262,
+      "simulated_reward": 0.7096175366467262
+    },
+    {
+      "timestamp": "2025-12-11T14:20:11.929048",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 6.2396134471459215,
+      "simulated_reward": 2.2479226894291844
+    },
+    {
+      "timestamp": "2025-12-11T14:20:11.929048",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.631194962080218,
+      "simulated_reward": 0.6631194962080218
+    },
+    {
+      "timestamp": "2025-12-11T14:20:11.929048",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.820240440791943,
+      "simulated_reward": 0.7820240440791942
+    },
+    {
+      "timestamp": "2025-12-11T14:20:11.934044",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.137557587578378,
+      "simulated_reward": 2.0275115175156757
+    },
+    {
+      "timestamp": "2025-12-11T14:20:11.934044",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.517005915189797,
+      "simulated_reward": 0.7517005915189797
+    },
+    {
+      "timestamp": "2025-12-11T14:20:11.934044",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.259196471604328,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T14:20:11.934044",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.17334563715543,
+      "simulated_reward": 0.717334563715543
+    },
+    {
+      "timestamp": "2025-12-11T14:20:11.934044",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.876399973698367,
+      "simulated_reward": 0.7876399973698367
+    },
+    {
+      "timestamp": "2025-12-11T14:20:11.934044",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.951687270167768,
+      "simulated_reward": 0.7951687270167768
+    },
+    {
+      "timestamp": "2025-12-11T14:42:52.687394",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 9.461305457392172,
+      "simulated_reward": 0.9461305457392172
+    },
+    {
+      "timestamp": "2025-12-11T14:42:52.687394",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.271216548823147,
+      "simulated_reward": 0.6271216548823146
+    },
+    {
+      "timestamp": "2025-12-11T14:42:52.687394",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.853640751813419,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T14:42:52.687394",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.071515978975023,
+      "simulated_reward": 0.7071515978975023
+    },
+    {
+      "timestamp": "2025-12-11T14:42:52.687394",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.280356898421382,
+      "simulated_reward": 2.0560713796842762
+    },
+    {
+      "timestamp": "2025-12-11T14:42:52.694398",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 6.715641053662542,
+      "simulated_reward": 0.6715641053662542
+    },
+    {
+      "timestamp": "2025-12-11T14:42:52.694398",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.968815897997855,
+      "simulated_reward": 0.6968815897997855
+    },
+    {
+      "timestamp": "2025-12-11T14:42:52.694398",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.596042952503912,
+      "simulated_reward": 2.1192085905007825
+    },
+    {
+      "timestamp": "2025-12-11T14:42:52.694398",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.81254920291339,
+      "simulated_reward": 0.6812549202913389
+    },
+    {
+      "timestamp": "2025-12-11T14:42:52.694398",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.970753366636264,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T14:42:52.694398",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.82603353977761,
+      "simulated_reward": 0.682603353977761
+    },
+    {
+      "timestamp": "2025-12-11T14:43:44.443605",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.5155653750180855,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T14:43:44.443605",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.986013857101943,
+      "simulated_reward": 0.6986013857101943
+    },
+    {
+      "timestamp": "2025-12-11T14:43:44.443605",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.23775486778514,
+      "simulated_reward": 0.8237754867785141
+    },
+    {
+      "timestamp": "2025-12-11T14:43:44.443605",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.472951837465593,
+      "simulated_reward": 0.7472951837465593
+    },
+    {
+      "timestamp": "2025-12-11T14:43:44.443605",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.778738702994819,
+      "simulated_reward": 2.155747740598964
+    },
+    {
+      "timestamp": "2025-12-11T14:43:44.580372",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.284873447463279,
+      "simulated_reward": 2.0569746894926557
+    },
+    {
+      "timestamp": "2025-12-11T14:43:44.580372",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.023350359128871,
+      "simulated_reward": 0.7023350359128872
+    },
+    {
+      "timestamp": "2025-12-11T14:43:44.580372",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.618849423340418,
+      "simulated_reward": 0.7618849423340418
+    },
+    {
+      "timestamp": "2025-12-11T14:43:44.580372",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.957664928654326,
+      "simulated_reward": 0.6957664928654326
+    },
+    {
+      "timestamp": "2025-12-11T14:43:44.580372",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.309001598445751,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T14:43:44.580372",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.751799264127436,
+      "simulated_reward": 0.7751799264127436
+    },
+    {
+      "timestamp": "2025-12-11T14:46:09.642930",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.770985826882185,
+      "simulated_reward": 0.6770985826882185
+    },
+    {
+      "timestamp": "2025-12-11T14:46:09.642930",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 8.096378307696712,
+      "simulated_reward": 0.8096378307696712
+    },
+    {
+      "timestamp": "2025-12-11T14:46:09.642930",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.353836988364353,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T14:46:09.642930",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.639021292632582,
+      "simulated_reward": 0.7639021292632582
+    },
+    {
+      "timestamp": "2025-12-11T14:46:09.642930",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.83362045294561,
+      "simulated_reward": 0.783362045294561
+    },
+    {
+      "timestamp": "2025-12-11T14:46:09.668762",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.933000285734858,
+      "simulated_reward": 0.6933000285734858
+    },
+    {
+      "timestamp": "2025-12-11T14:46:09.668762",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.326377957901898,
+      "simulated_reward": 0.7326377957901898
+    },
+    {
+      "timestamp": "2025-12-11T14:46:09.668762",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.612901962814281,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T14:46:09.668762",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.807280443748182,
+      "simulated_reward": 0.6807280443748182
+    },
+    {
+      "timestamp": "2025-12-11T14:46:09.668762",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.36469973949696,
+      "simulated_reward": 0.8364699739496959
+    },
+    {
+      "timestamp": "2025-12-11T14:46:09.668762",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.422819527241097,
+      "simulated_reward": 2.0845639054482192
+    },
+    {
+      "timestamp": "2025-12-11T14:54:10.457474",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 3.4694299039031984,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T14:54:10.457474",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 5.629713717286853,
+      "simulated_reward": 0.5629713717286853
+    },
+    {
+      "timestamp": "2025-12-11T14:54:10.457474",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.613820782253204,
+      "simulated_reward": 0.7613820782253204
+    },
+    {
+      "timestamp": "2025-12-11T14:54:10.457474",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.212451926064771,
+      "simulated_reward": 0.8212451926064771
+    },
+    {
+      "timestamp": "2025-12-11T14:54:10.457474",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.653735828620553,
+      "simulated_reward": 0.6653735828620553
+    },
+    {
+      "timestamp": "2025-12-11T14:54:10.475402",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.950394170316166,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T14:54:10.475402",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 8.214484906288446,
+      "simulated_reward": 0.8214484906288446
+    },
+    {
+      "timestamp": "2025-12-11T14:54:10.475402",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.5079434746733,
+      "simulated_reward": 0.75079434746733
+    },
+    {
+      "timestamp": "2025-12-11T14:54:10.475402",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.25586840037359,
+      "simulated_reward": 0.8255868400373589
+    },
+    {
+      "timestamp": "2025-12-11T14:54:10.475402",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.938241740937534,
+      "simulated_reward": 0.7938241740937534
+    },
+    {
+      "timestamp": "2025-12-11T14:54:10.475402",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.8752744922948805,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T15:05:18.812765",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.045954973885509,
+      "simulated_reward": 0.7045954973885509
+    },
+    {
+      "timestamp": "2025-12-11T15:05:18.812765",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.2334762931625,
+      "simulated_reward": 2.0466952586325
+    },
+    {
+      "timestamp": "2025-12-11T15:05:18.812765",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.879847956371547,
+      "simulated_reward": 0.7879847956371547
+    },
+    {
+      "timestamp": "2025-12-11T15:05:18.812765",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.887132710484912,
+      "simulated_reward": 0.6887132710484912
+    },
+    {
+      "timestamp": "2025-12-11T15:05:18.812765",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.982571987252769,
+      "simulated_reward": 0.6982571987252769
+    },
+    {
+      "timestamp": "2025-12-11T15:05:18.820766",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.690220511515177,
+      "simulated_reward": 0.6690220511515177
+    },
+    {
+      "timestamp": "2025-12-11T15:05:18.820766",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.985708573831369,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T15:05:18.820766",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.779248356612662,
+      "simulated_reward": 0.7779248356612662
+    },
+    {
+      "timestamp": "2025-12-11T15:05:18.820766",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 8.294646425520988,
+      "simulated_reward": 0.8294646425520987
+    },
+    {
+      "timestamp": "2025-12-11T15:05:18.820766",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.147396641488025,
+      "simulated_reward": 0.7147396641488025
+    },
+    {
+      "timestamp": "2025-12-11T15:05:18.820766",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.69737271745214,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T15:05:30.403146",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.744916814589981,
+      "simulated_reward": 2.1489833629179964
+    },
+    {
+      "timestamp": "2025-12-11T15:05:30.403146",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.1881620612737605,
+      "simulated_reward": 2.037632412254752
+    },
+    {
+      "timestamp": "2025-12-11T15:05:30.403146",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.924095848152585,
+      "simulated_reward": 0.7924095848152585
+    },
+    {
+      "timestamp": "2025-12-11T15:05:30.403146",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.253185785367847,
+      "simulated_reward": 0.7253185785367847
+    },
+    {
+      "timestamp": "2025-12-11T15:05:30.403146",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.289089625849557,
+      "simulated_reward": 0.7289089625849556
+    },
+    {
+      "timestamp": "2025-12-11T15:05:30.441025",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 3.936174553356296,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T15:05:30.441025",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.511844089074769,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T15:05:30.441025",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.938620890861177,
+      "simulated_reward": 0.6938620890861177
+    },
+    {
+      "timestamp": "2025-12-11T15:05:30.441025",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.596893270007613,
+      "simulated_reward": 0.7596893270007613
+    },
+    {
+      "timestamp": "2025-12-11T15:05:30.441025",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.867979317629494,
+      "simulated_reward": 0.6867979317629495
+    },
+    {
+      "timestamp": "2025-12-11T15:05:30.441025",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.1281888430841756,
+      "simulated_reward": 0.6128188843084176
+    },
+    {
+      "timestamp": "2025-12-11T15:06:01.653296",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.385542981955147,
+      "simulated_reward": 0.7385542981955147
+    },
+    {
+      "timestamp": "2025-12-11T15:06:01.653296",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.79721813837397,
+      "simulated_reward": 0.679721813837397
+    },
+    {
+      "timestamp": "2025-12-11T15:06:01.653296",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.317119335389179,
+      "simulated_reward": 0.6317119335389179
+    },
+    {
+      "timestamp": "2025-12-11T15:06:01.653296",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.1374621803006795,
+      "simulated_reward": 2.027492436060136
+    },
+    {
+      "timestamp": "2025-12-11T15:06:01.653296",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.445360633465947,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T15:06:01.670321",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 6.9099114103913255,
+      "simulated_reward": 0.6909911410391325
+    },
+    {
+      "timestamp": "2025-12-11T15:06:01.670321",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.364034953195269,
+      "simulated_reward": 0.6364034953195269
+    },
+    {
+      "timestamp": "2025-12-11T15:06:01.670321",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.876969508794089,
+      "simulated_reward": 0.687696950879409
+    },
+    {
+      "timestamp": "2025-12-11T15:06:01.670321",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.605870986629066,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T15:06:01.670321",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.822155062565148,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T15:06:01.670321",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.94544133907848,
+      "simulated_reward": 0.694544133907848
+    },
+    {
+      "timestamp": "2025-12-11T15:07:06.174147",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.212778737072999,
+      "simulated_reward": 0.7212778737072999
+    },
+    {
+      "timestamp": "2025-12-11T15:07:06.174147",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.769604275231287,
+      "simulated_reward": 0.7769604275231287
+    },
+    {
+      "timestamp": "2025-12-11T15:07:06.174147",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.45780482622834,
+      "simulated_reward": 0.745780482622834
+    },
+    {
+      "timestamp": "2025-12-11T15:07:06.174147",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.209381810363619,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T15:07:06.174147",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.932949956498371,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T15:07:06.292167",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.5469405706280535,
+      "simulated_reward": 0.6546940570628054
+    },
+    {
+      "timestamp": "2025-12-11T15:07:06.292167",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.0643963574606,
+      "simulated_reward": 0.80643963574606
+    },
+    {
+      "timestamp": "2025-12-11T15:07:06.292167",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.391329523653826,
+      "simulated_reward": 0.6391329523653826
+    },
+    {
+      "timestamp": "2025-12-11T15:07:06.292167",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.0003358576180155,
+      "simulated_reward": 2.000067171523603
+    },
+    {
+      "timestamp": "2025-12-11T15:07:06.292167",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.7928942832583905,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T15:07:06.292167",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.487091908117694,
+      "simulated_reward": 0.7487091908117695
+    },
+    {
+      "timestamp": "2025-12-11T16:32:35.172254",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.369751737764888,
+      "simulated_reward": 0.6369751737764888
+    },
+    {
+      "timestamp": "2025-12-11T16:32:35.172254",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.957966571652288,
+      "simulated_reward": 2.191593314330458
+    },
+    {
+      "timestamp": "2025-12-11T16:32:35.172254",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.969164089633652,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T16:32:35.172254",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.961972432664729,
+      "simulated_reward": 0.6961972432664729
+    },
+    {
+      "timestamp": "2025-12-11T16:32:35.172254",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.200782498390238,
+      "simulated_reward": 0.8200782498390238
+    },
+    {
+      "timestamp": "2025-12-11T16:32:35.186307",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.864873858681971,
+      "simulated_reward": 0.7864873858681971
+    },
+    {
+      "timestamp": "2025-12-11T16:32:35.186307",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.7354142478310175,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T16:32:35.186307",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.929042506164988,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T16:32:35.186307",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.050818503250212,
+      "simulated_reward": 0.7050818503250211
+    },
+    {
+      "timestamp": "2025-12-11T16:32:35.186307",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 9.066760722026801,
+      "simulated_reward": 0.9066760722026801
+    },
+    {
+      "timestamp": "2025-12-11T16:32:35.186307",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.9172217571359536,
+      "simulated_reward": 0.6917221757135954
+    },
+    {
+      "timestamp": "2025-12-11T16:46:41.529388",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 6.000048453850747,
+      "simulated_reward": 2.200009690770149
+    },
+    {
+      "timestamp": "2025-12-11T16:46:41.529388",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.068497805705615,
+      "simulated_reward": 0.8068497805705614
+    },
+    {
+      "timestamp": "2025-12-11T16:46:41.529388",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.271533060769132,
+      "simulated_reward": 0.7271533060769132
+    },
+    {
+      "timestamp": "2025-12-11T16:46:41.529388",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.503142048525284,
+      "simulated_reward": 0.6503142048525283
+    },
+    {
+      "timestamp": "2025-12-11T16:46:41.529388",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.2200212527644405,
+      "simulated_reward": 2.044004250552888
+    },
+    {
+      "timestamp": "2025-12-11T16:46:41.543930",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.339206939491971,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T16:46:41.543930",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.580236197225454,
+      "simulated_reward": 0.7580236197225454
+    },
+    {
+      "timestamp": "2025-12-11T16:46:41.543930",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.665128031202693,
+      "simulated_reward": 0.7665128031202693
+    },
+    {
+      "timestamp": "2025-12-11T16:46:41.543930",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.302075970678948,
+      "simulated_reward": 0.6302075970678949
+    },
+    {
+      "timestamp": "2025-12-11T16:46:41.543930",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.641352473836027,
+      "simulated_reward": 2.1282704947672055
+    },
+    {
+      "timestamp": "2025-12-11T16:46:41.543930",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.236015389210386,
+      "simulated_reward": 0.7236015389210386
+    },
+    {
+      "timestamp": "2025-12-11T17:13:31.121264",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.629923741797471,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T17:13:31.121264",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.400326058108874,
+      "simulated_reward": 2.0800652116217746
+    },
+    {
+      "timestamp": "2025-12-11T17:13:31.121264",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.1801871437736775,
+      "simulated_reward": 0.7180187143773678
+    },
+    {
+      "timestamp": "2025-12-11T17:13:31.121264",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.663080901276799,
+      "simulated_reward": 0.6663080901276799
+    },
+    {
+      "timestamp": "2025-12-11T17:13:31.121264",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.019594905503834,
+      "simulated_reward": 0.7019594905503834
+    },
+    {
+      "timestamp": "2025-12-11T17:13:31.131145",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.494418643953597,
+      "simulated_reward": 2.098883728790719
+    },
+    {
+      "timestamp": "2025-12-11T17:13:31.131145",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.2728920043198455,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T17:13:31.131145",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.628166557097917,
+      "simulated_reward": 0.6628166557097918
+    },
+    {
+      "timestamp": "2025-12-11T17:13:31.131145",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.135769849109439,
+      "simulated_reward": 0.7135769849109439
+    },
+    {
+      "timestamp": "2025-12-11T17:13:31.131145",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.41757162366633,
+      "simulated_reward": 0.741757162366633
+    },
+    {
+      "timestamp": "2025-12-11T17:13:31.131145",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.170098322281461,
+      "simulated_reward": 0.8170098322281462
+    },
+    {
+      "timestamp": "2025-12-11T17:38:01.215807",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.536986138113455,
+      "simulated_reward": 0.7536986138113455
+    },
+    {
+      "timestamp": "2025-12-11T17:38:01.215807",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.7000184007908485,
+      "simulated_reward": 0.7700018400790849
+    },
+    {
+      "timestamp": "2025-12-11T17:38:01.215807",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.257668274434262,
+      "simulated_reward": 2.0515336548868524
+    },
+    {
+      "timestamp": "2025-12-11T17:38:01.215807",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.372402933208752,
+      "simulated_reward": 0.8372402933208752
+    },
+    {
+      "timestamp": "2025-12-11T17:38:01.215807",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.440602565844982,
+      "simulated_reward": 0.6440602565844982
+    },
+    {
+      "timestamp": "2025-12-11T17:38:01.240296",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.715130637669958,
+      "simulated_reward": 0.6715130637669958
+    },
+    {
+      "timestamp": "2025-12-11T17:38:01.240296",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.354411259323355,
+      "simulated_reward": 0.6354411259323355
+    },
+    {
+      "timestamp": "2025-12-11T17:38:01.240296",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.097188730133136,
+      "simulated_reward": 2.019437746026627
+    },
+    {
+      "timestamp": "2025-12-11T17:38:01.240296",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.957745463117828,
+      "simulated_reward": 0.7957745463117828
+    },
+    {
+      "timestamp": "2025-12-11T17:38:01.240296",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.215204962775689,
+      "simulated_reward": 0.6215204962775689
+    },
+    {
+      "timestamp": "2025-12-11T17:38:01.240296",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.252137431065974,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T17:57:11.662132",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.481033966601434,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-11T17:57:11.662132",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.433792727962237,
+      "simulated_reward": 0.7433792727962236
+    },
+    {
+      "timestamp": "2025-12-11T17:57:11.662132",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.032218658283041,
+      "simulated_reward": 0.703221865828304
+    },
+    {
+      "timestamp": "2025-12-11T17:57:11.662132",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.77486511325552,
+      "simulated_reward": 0.6774865113255519
+    },
+    {
+      "timestamp": "2025-12-11T17:57:11.662132",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.386548283025133,
+      "simulated_reward": 0.8386548283025134
+    },
+    {
+      "timestamp": "2025-12-11T17:57:11.673016",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.249980435197536,
+      "simulated_reward": 2.0499960870395073
+    },
+    {
+      "timestamp": "2025-12-11T17:57:11.673016",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.31220441449219,
+      "simulated_reward": 0.731220441449219
+    },
+    {
+      "timestamp": "2025-12-11T17:57:11.673016",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 8.186371077587244,
+      "simulated_reward": 0.8186371077587244
+    },
+    {
+      "timestamp": "2025-12-11T17:57:11.673016",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.043299456454998,
+      "simulated_reward": 0.7043299456454999
+    },
+    {
+      "timestamp": "2025-12-11T17:57:11.673016",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.079810140466677,
+      "simulated_reward": 0.8079810140466677
+    },
+    {
+      "timestamp": "2025-12-11T17:57:11.673016",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.958962188763283,
+      "simulated_reward": 2.1917924377526568
+    },
+    {
+      "timestamp": "2025-12-13T08:38:32.709510",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 3.872916686887243,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-13T08:38:32.709510",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.270562965194262,
+      "simulated_reward": 0.7270562965194263
+    },
+    {
+      "timestamp": "2025-12-13T08:38:32.709510",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.9606652199904415,
+      "simulated_reward": 0.6960665219990442
+    },
+    {
+      "timestamp": "2025-12-13T08:38:32.709510",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.244217388240964,
+      "simulated_reward": 0.8244217388240964
+    },
+    {
+      "timestamp": "2025-12-13T08:38:32.709510",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.355441773641633,
+      "simulated_reward": 0.6355441773641634
+    },
+    {
+      "timestamp": "2025-12-13T08:38:32.761508",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.348951715266486,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-13T08:38:32.761508",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.520680885906738,
+      "simulated_reward": 0.7520680885906738
+    },
+    {
+      "timestamp": "2025-12-13T08:38:32.761508",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.362585597031772,
+      "simulated_reward": 0.7362585597031772
+    },
+    {
+      "timestamp": "2025-12-13T08:38:32.761508",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.633013339775616,
+      "simulated_reward": 0.7633013339775616
+    },
+    {
+      "timestamp": "2025-12-13T08:38:32.761508",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.371446773011675,
+      "simulated_reward": 0.6371446773011675
+    },
+    {
+      "timestamp": "2025-12-13T08:38:32.761508",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.145168625056522,
+      "simulated_reward": 2.0290337250113044
+    },
+    {
+      "timestamp": "2025-12-16T04:18:21.881218",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.564582043886476,
+      "simulated_reward": 0.8564582043886476
+    },
+    {
+      "timestamp": "2025-12-16T04:18:21.881218",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.672168315795346,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-16T04:18:21.881218",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.614868614012636,
+      "simulated_reward": 2.122973722802527
+    },
+    {
+      "timestamp": "2025-12-16T04:18:21.881218",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.546170268224951,
+      "simulated_reward": 0.6546170268224951
+    },
+    {
+      "timestamp": "2025-12-16T04:18:21.881218",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.9013315881487465,
+      "simulated_reward": 0.6901331588148747
+    },
+    {
+      "timestamp": "2025-12-16T04:18:21.915712",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.159541772126182,
+      "simulated_reward": 0.8159541772126182
+    },
+    {
+      "timestamp": "2025-12-16T04:18:21.915712",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.559129323298602,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-16T04:18:21.915712",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.90150156347577,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-16T04:18:21.915712",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.756278039712335,
+      "simulated_reward": 0.6756278039712335
+    },
+    {
+      "timestamp": "2025-12-16T04:18:21.915712",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.347937431938853,
+      "simulated_reward": 0.6347937431938853
+    },
+    {
+      "timestamp": "2025-12-16T04:18:21.915712",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.896684973861335,
+      "simulated_reward": 0.6896684973861336
+    },
+    {
+      "timestamp": "2025-12-16T07:41:32.815395",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.725594848661154,
+      "simulated_reward": 0.7725594848661154
+    },
+    {
+      "timestamp": "2025-12-16T07:41:32.815395",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.267206910367751,
+      "simulated_reward": 0.7267206910367751
+    },
+    {
+      "timestamp": "2025-12-16T07:41:32.815395",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.013087537608014,
+      "simulated_reward": 2.002617507521603
+    },
+    {
+      "timestamp": "2025-12-16T07:41:32.815395",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.921680683601524,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-16T07:41:32.815395",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.1056172191466365,
+      "simulated_reward": 0.7105617219146636
+    },
+    {
+      "timestamp": "2025-12-16T07:41:32.905335",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.876984845152388,
+      "simulated_reward": 0.7876984845152388
+    },
+    {
+      "timestamp": "2025-12-16T07:41:32.905335",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.6565137820256215,
+      "simulated_reward": 0.6656513782025621
+    },
+    {
+      "timestamp": "2025-12-16T07:41:32.905335",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.2695956085769655,
+      "simulated_reward": 2.053919121715393
+    },
+    {
+      "timestamp": "2025-12-16T07:41:32.905335",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.523945101034187,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2025-12-16T07:41:32.905335",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.37681556192062,
+      "simulated_reward": 0.737681556192062
+    },
+    {
+      "timestamp": "2025-12-16T07:41:32.905335",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.916653217681451,
+      "simulated_reward": 0.6916653217681451
+    },
+    {
+      "timestamp": "2026-02-11T04:29:57.934988",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.717171978184181,
+      "simulated_reward": 0.6717171978184181
+    },
+    {
+      "timestamp": "2026-02-11T04:29:57.934988",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.824351262260297,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2026-02-11T04:29:57.934988",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.6264269536363285,
+      "simulated_reward": 0.6626426953636328
+    },
+    {
+      "timestamp": "2026-02-11T04:29:57.934988",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.75329016266564,
+      "simulated_reward": 0.775329016266564
+    },
+    {
+      "timestamp": "2026-02-11T04:29:57.934988",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 6.130158402975887,
+      "simulated_reward": 2.2260316805951774
+    },
+    {
+      "timestamp": "2026-02-11T04:29:57.958525",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.461901230768824,
+      "simulated_reward": 0.6461901230768824
+    },
+    {
+      "timestamp": "2026-02-11T04:29:57.958525",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.694100007654232,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2026-02-11T04:29:57.958525",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.53051742405033,
+      "simulated_reward": 0.6530517424050329
+    },
+    {
+      "timestamp": "2026-02-11T04:29:57.958525",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.558326143160489,
+      "simulated_reward": 0.8558326143160488
+    },
+    {
+      "timestamp": "2026-02-11T04:29:57.958525",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.638041618529964,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2026-02-11T04:29:57.958525",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.8566328471815305,
+      "simulated_reward": 0.6856632847181531
+    },
+    {
+      "timestamp": "2026-02-11T08:04:03.035578",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.996432473740346,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2026-02-11T08:04:03.035578",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.928890092302365,
+      "simulated_reward": 0.7928890092302365
+    },
+    {
+      "timestamp": "2026-02-11T08:04:03.035578",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.316588565230532,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2026-02-11T08:04:03.035578",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.398018179502885,
+      "simulated_reward": 0.6398018179502885
+    },
+    {
+      "timestamp": "2026-02-11T08:04:03.035578",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.88132123212289,
+      "simulated_reward": 0.688132123212289
+    },
+    {
+      "timestamp": "2026-02-11T08:04:03.120590",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.418388675920956,
+      "simulated_reward": 2.083677735184191
+    },
+    {
+      "timestamp": "2026-02-11T08:04:03.120590",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.624083981202413,
+      "simulated_reward": 0.7624083981202413
+    },
+    {
+      "timestamp": "2026-02-11T08:04:03.120590",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.711584002478311,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2026-02-11T08:04:03.120590",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.817042308036662,
+      "simulated_reward": 0.6817042308036662
+    },
+    {
+      "timestamp": "2026-02-11T08:04:03.120590",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 8.195881123076934,
+      "simulated_reward": 0.8195881123076934
+    },
+    {
+      "timestamp": "2026-02-11T08:04:03.120590",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.078375730070676,
+      "simulated_reward": 0.7078375730070676
+    },
+    {
+      "timestamp": "2026-03-11T05:39:00.459902",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.959594029731552,
+      "simulated_reward": 0.6959594029731553
+    },
+    {
+      "timestamp": "2026-03-11T05:39:00.459902",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.686906800890904,
+      "simulated_reward": 0.7686906800890905
+    },
+    {
+      "timestamp": "2026-03-11T05:39:00.459902",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.234212112787039,
+      "simulated_reward": 2.0468424225574076
+    },
+    {
+      "timestamp": "2026-03-11T05:39:00.459902",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.408602397218534,
+      "simulated_reward": 0.6408602397218534
+    },
+    {
+      "timestamp": "2026-03-11T05:39:00.459902",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.076532593100848,
+      "simulated_reward": 2.0153065186201697
+    },
+    {
+      "timestamp": "2026-03-11T05:39:00.474726",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.838755127498906,
+      "simulated_reward": 0.6838755127498906
+    },
+    {
+      "timestamp": "2026-03-11T05:39:00.474726",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.634068582685821,
+      "simulated_reward": 0.763406858268582
+    },
+    {
+      "timestamp": "2026-03-11T05:39:00.474726",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.606796392071636,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2026-03-11T05:39:00.474726",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.157869635788788,
+      "simulated_reward": 0.7157869635788787
+    },
+    {
+      "timestamp": "2026-03-11T05:39:00.474726",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.37823515489042,
+      "simulated_reward": 2.075647030978084
+    },
+    {
+      "timestamp": "2026-03-11T05:39:00.474726",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.720857308855523,
+      "simulated_reward": 0.6720857308855523
+    },
+    {
+      "timestamp": "2026-03-25T06:07:07.935975",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.754619079940039,
+      "simulated_reward": 0.675461907994004
+    },
+    {
+      "timestamp": "2026-03-25T06:07:07.935975",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.998450814383563,
+      "simulated_reward": 0.6998450814383563
+    },
+    {
+      "timestamp": "2026-03-25T06:07:07.935975",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.716484580552745,
+      "simulated_reward": 0.6716484580552745
+    },
+    {
+      "timestamp": "2026-03-25T06:07:07.935975",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.106807770888385,
+      "simulated_reward": 2.021361554177677
+    },
+    {
+      "timestamp": "2026-03-25T06:07:07.935975",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 6.687446987753663,
+      "simulated_reward": 0.6687446987753664
+    },
+    {
+      "timestamp": "2026-03-25T06:07:07.953214",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.269011324838923,
+      "simulated_reward": 0.6269011324838922
+    },
+    {
+      "timestamp": "2026-03-25T06:07:07.953214",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.432202622182276,
+      "simulated_reward": 0.6432202622182276
+    },
+    {
+      "timestamp": "2026-03-25T06:07:07.953214",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.721805899928348,
+      "simulated_reward": 0.6721805899928348
+    },
+    {
+      "timestamp": "2026-03-25T06:07:07.953214",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.954503469133401,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2026-03-25T06:07:07.953214",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.180625415040858,
+      "simulated_reward": 0.7180625415040858
+    },
+    {
+      "timestamp": "2026-03-25T06:07:07.953214",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.054182596260364,
+      "simulated_reward": 2.0108365192520727
+    },
+    {
+      "timestamp": "2026-03-25T06:38:37.225938",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.980855718103864,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2026-03-25T06:38:37.225938",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.251235072669285,
+      "simulated_reward": 0.7251235072669285
+    },
+    {
+      "timestamp": "2026-03-25T06:38:37.225938",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.824099029939637,
+      "simulated_reward": 0.7824099029939637
+    },
+    {
+      "timestamp": "2026-03-25T06:38:37.225938",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.958834313516107,
+      "simulated_reward": 0.6958834313516107
+    },
+    {
+      "timestamp": "2026-03-25T06:38:37.225938",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.275018168300619,
+      "simulated_reward": 0.8275018168300619
+    },
+    {
+      "timestamp": "2026-03-25T06:38:37.831006",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.688972548694021,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2026-03-25T06:38:37.831006",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.095630895320727,
+      "simulated_reward": 0.7095630895320727
+    },
+    {
+      "timestamp": "2026-03-25T06:38:37.831006",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.980555880403559,
+      "simulated_reward": 0.6980555880403558
+    },
+    {
+      "timestamp": "2026-03-25T06:38:37.831006",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.115170687269599,
+      "simulated_reward": 0.7115170687269599
+    },
+    {
+      "timestamp": "2026-03-25T06:38:37.831006",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.661549945511627,
+      "simulated_reward": 0.7661549945511628
+    },
+    {
+      "timestamp": "2026-03-25T06:38:37.831006",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.711471258606535,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2026-03-25T06:41:11.611052",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.086320017018685,
+      "simulated_reward": 2.017264003403737
+    },
+    {
+      "timestamp": "2026-03-25T06:41:11.611052",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.443418695353631,
+      "simulated_reward": 0.7443418695353631
+    },
+    {
+      "timestamp": "2026-03-25T06:41:11.611052",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.645490524891627,
+      "simulated_reward": 0.7645490524891627
+    },
+    {
+      "timestamp": "2026-03-25T06:41:11.611052",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.465579866649285,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2026-03-25T06:41:11.611052",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.765584494573774,
+      "simulated_reward": 0.6765584494573774
+    },
+    {
+      "timestamp": "2026-03-25T06:41:11.628998",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.160653798696065,
+      "simulated_reward": 2.032130759739213
+    },
+    {
+      "timestamp": "2026-03-25T06:41:11.628998",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 5.747794796178548,
+      "simulated_reward": 0.5747794796178548
+    },
+    {
+      "timestamp": "2026-03-25T06:41:11.628998",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.727550969542646,
+      "simulated_reward": 0.6727550969542646
+    },
+    {
+      "timestamp": "2026-03-25T06:41:11.628998",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.188182577004881,
+      "simulated_reward": 2.037636515400976
+    },
+    {
+      "timestamp": "2026-03-25T06:41:11.628998",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 5.802020322969812,
+      "simulated_reward": 0.5802020322969812
+    },
+    {
+      "timestamp": "2026-03-25T06:41:11.628998",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.65073603768258,
+      "simulated_reward": 0.865073603768258
+    },
+    {
+      "timestamp": "2026-03-25T06:45:50.359497",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.012125075097158,
+      "simulated_reward": 0.7012125075097158
+    },
+    {
+      "timestamp": "2026-03-25T06:45:50.359497",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.986027761635194,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2026-03-25T06:45:50.359497",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.6891442173914015,
+      "simulated_reward": 0.6689144217391402
+    },
+    {
+      "timestamp": "2026-03-25T06:45:50.359497",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.517679483510829,
+      "simulated_reward": 2.103535896702166
+    },
+    {
+      "timestamp": "2026-03-25T06:45:50.359497",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.296554047716128,
+      "simulated_reward": 0.8296554047716128
+    },
+    {
+      "timestamp": "2026-03-25T06:45:50.376440",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.340977479491953,
+      "simulated_reward": 0.7340977479491954
+    },
+    {
+      "timestamp": "2026-03-25T06:45:50.376440",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.4224386951458925,
+      "simulated_reward": 2.0844877390291785
+    },
+    {
+      "timestamp": "2026-03-25T06:45:50.376440",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.343016841999884,
+      "simulated_reward": 0.6343016841999883
+    },
+    {
+      "timestamp": "2026-03-25T06:45:50.376440",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.365033308829639,
+      "simulated_reward": 2.0730066617659277
+    },
+    {
+      "timestamp": "2026-03-25T06:45:50.376440",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.923124032385863,
+      "simulated_reward": 0.7923124032385863
+    },
+    {
+      "timestamp": "2026-03-25T06:45:50.376440",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.97501266228794,
+      "simulated_reward": 0.7975012662287939
+    },
+    {
+      "timestamp": "2026-04-04T05:12:33.189226",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.192114841379947,
+      "simulated_reward": 2.0384229682759893
+    },
+    {
+      "timestamp": "2026-04-04T05:12:33.189226",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.006987647657065,
+      "simulated_reward": 2.0013975295314133
+    },
+    {
+      "timestamp": "2026-04-04T05:12:33.189226",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.197026060273106,
+      "simulated_reward": 0.7197026060273106
+    },
+    {
+      "timestamp": "2026-04-04T05:12:33.189226",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.52583163095329,
+      "simulated_reward": 0.752583163095329
+    },
+    {
+      "timestamp": "2026-04-04T05:12:33.189226",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.668237101874892,
+      "simulated_reward": 0.6668237101874892
+    },
+    {
+      "timestamp": "2026-04-04T05:12:33.209731",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.086135798480996,
+      "simulated_reward": 2.017227159696199
+    },
+    {
+      "timestamp": "2026-04-04T05:12:33.209731",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.232139389368623,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2026-04-04T05:12:33.209731",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.365874512329941,
+      "simulated_reward": 0.7365874512329941
+    },
+    {
+      "timestamp": "2026-04-04T05:12:33.209731",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.402925804858496,
+      "simulated_reward": 0.7402925804858496
+    },
+    {
+      "timestamp": "2026-04-04T05:12:33.209731",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.7494126488285415,
+      "simulated_reward": 0.6749412648828541
+    },
+    {
+      "timestamp": "2026-04-04T05:12:33.209731",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 8.0877405351927,
+      "simulated_reward": 0.8087740535192699
+    },
+    {
+      "timestamp": "2026-04-04T05:17:03.546209",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.339025028061561,
+      "simulated_reward": 0.7339025028061561
+    },
+    {
+      "timestamp": "2026-04-04T05:17:03.546209",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.775350858979142,
+      "simulated_reward": 0.6775350858979141
+    },
+    {
+      "timestamp": "2026-04-04T05:17:03.546209",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.145617308703692,
+      "simulated_reward": 2.0291234617407383
+    },
+    {
+      "timestamp": "2026-04-04T05:17:03.546209",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.884515716001657,
+      "simulated_reward": 0.7884515716001657
+    },
+    {
+      "timestamp": "2026-04-04T05:17:03.546209",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.451476084476396,
+      "simulated_reward": 0.7451476084476396
+    },
+    {
+      "timestamp": "2026-04-04T05:17:03.570238",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.791955350749825,
+      "simulated_reward": 0.6791955350749825
+    },
+    {
+      "timestamp": "2026-04-04T05:17:03.570238",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 8.764504341270063,
+      "simulated_reward": 0.8764504341270063
+    },
+    {
+      "timestamp": "2026-04-04T05:17:03.570238",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.5989007120605105,
+      "simulated_reward": 2.119780142412102
+    },
+    {
+      "timestamp": "2026-04-04T05:17:03.570238",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.851722494113282,
+      "simulated_reward": 0.7851722494113282
+    },
+    {
+      "timestamp": "2026-04-04T05:17:03.570238",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.400294950374757,
+      "simulated_reward": 0.7400294950374757
+    },
+    {
+      "timestamp": "2026-04-04T05:17:03.570238",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.811890575505373,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2026-04-04T05:25:26.187394",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.820628372266043,
+      "simulated_reward": 0.7820628372266043
+    },
+    {
+      "timestamp": "2026-04-04T05:25:26.187394",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.852133659443506,
+      "simulated_reward": 0.7852133659443506
+    },
+    {
+      "timestamp": "2026-04-04T05:25:26.187394",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.7142293854377275,
+      "simulated_reward": 2.1428458770875456
+    },
+    {
+      "timestamp": "2026-04-04T05:25:26.187394",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.809126886723176,
+      "simulated_reward": 0.6809126886723176
+    },
+    {
+      "timestamp": "2026-04-04T05:25:26.187394",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.304617097118351,
+      "simulated_reward": 0.6304617097118351
+    },
+    {
+      "timestamp": "2026-04-04T05:25:26.201191",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.201910960278399,
+      "simulated_reward": 0.8201910960278399
+    },
+    {
+      "timestamp": "2026-04-04T05:25:26.201191",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.6599075429969945,
+      "simulated_reward": 0.7659907542996994
+    },
+    {
+      "timestamp": "2026-04-04T05:25:26.201191",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.510913584366287,
+      "simulated_reward": 2.1021827168732576
+    },
+    {
+      "timestamp": "2026-04-04T05:25:26.201191",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.2516545352478,
+      "simulated_reward": 0.72516545352478
+    },
+    {
+      "timestamp": "2026-04-04T05:25:26.201191",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.049528228357444,
+      "simulated_reward": 0.7049528228357443
+    },
+    {
+      "timestamp": "2026-04-04T05:25:26.201191",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.872092452611288,
+      "simulated_reward": 2.1744184905222577
+    },
+    {
+      "timestamp": "2026-04-04T05:59:52.095825",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.425478045244436,
+      "simulated_reward": 0.7425478045244436
+    },
+    {
+      "timestamp": "2026-04-04T05:59:52.095825",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.590791720891048,
+      "simulated_reward": 0.8590791720891048
+    },
+    {
+      "timestamp": "2026-04-04T05:59:52.095825",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.717283582114698,
+      "simulated_reward": 0.6717283582114698
+    },
+    {
+      "timestamp": "2026-04-04T05:59:52.095825",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.427644597567006,
+      "simulated_reward": 2.085528919513401
+    },
+    {
+      "timestamp": "2026-04-04T05:59:52.095825",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.705564546054782,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2026-04-04T05:59:52.111005",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.694029689382216,
+      "simulated_reward": 0.6694029689382216
+    },
+    {
+      "timestamp": "2026-04-04T05:59:52.111005",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.225115752018056,
+      "simulated_reward": 0.8225115752018055
+    },
+    {
+      "timestamp": "2026-04-04T05:59:52.111005",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.766462943706605,
+      "simulated_reward": 0.6766462943706605
+    },
+    {
+      "timestamp": "2026-04-04T05:59:52.111005",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.797913394376616,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2026-04-04T05:59:52.111005",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.309334732475675,
+      "simulated_reward": 2.061866946495135
+    },
+    {
+      "timestamp": "2026-04-04T05:59:52.111005",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.904314111252345,
+      "simulated_reward": 0.7904314111252345
+    },
+    {
+      "timestamp": "2026-04-09T04:34:37.320683",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.675716334182044,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2026-04-09T04:34:37.320683",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 4.706274883226811,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2026-04-09T04:34:37.320683",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.812009084752556,
+      "simulated_reward": 0.6812009084752556
+    },
+    {
+      "timestamp": "2026-04-09T04:34:37.320683",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 7.178886714069454,
+      "simulated_reward": 0.7178886714069453
+    },
+    {
+      "timestamp": "2026-04-09T04:34:37.320683",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.028998827770076,
+      "simulated_reward": 0.7028998827770077
+    },
+    {
+      "timestamp": "2026-04-09T04:34:37.346504",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.262697521259548,
+      "simulated_reward": 2.0525395042519095
+    },
+    {
+      "timestamp": "2026-04-09T04:34:37.346504",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.13737800983956,
+      "simulated_reward": 2.027475601967912
+    },
+    {
+      "timestamp": "2026-04-09T04:34:37.346504",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.8169073936408155,
+      "simulated_reward": 0.6816907393640815
+    },
+    {
+      "timestamp": "2026-04-09T04:34:37.346504",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.845714330744042,
+      "simulated_reward": 0.6845714330744042
+    },
+    {
+      "timestamp": "2026-04-09T04:34:37.346504",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.195510841238793,
+      "simulated_reward": 0.8195510841238793
+    },
+    {
+      "timestamp": "2026-04-09T04:34:37.346504",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.92562326240541,
+      "simulated_reward": 0.692562326240541
+    },
+    {
+      "timestamp": "2026-04-10T05:18:30.961826",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.030039952578723,
+      "simulated_reward": 0.7030039952578723
+    },
+    {
+      "timestamp": "2026-04-10T05:18:30.961826",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.356260667392686,
+      "simulated_reward": 2.071252133478537
+    },
+    {
+      "timestamp": "2026-04-10T05:18:30.961826",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 5.524015300440409,
+      "simulated_reward": 2.1048030600880816
+    },
+    {
+      "timestamp": "2026-04-10T05:18:30.961826",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 8.88517613899855,
+      "simulated_reward": 0.8885176138998551
+    },
+    {
+      "timestamp": "2026-04-10T05:18:30.961826",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 7.342976803500825,
+      "simulated_reward": 0.7342976803500825
+    },
+    {
+      "timestamp": "2026-04-10T05:18:30.979585",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.3793197528204395,
+      "simulated_reward": 0.7379319752820439
+    },
+    {
+      "timestamp": "2026-04-10T05:18:30.979585",
+      "exercise_id": "bicep_curls",
+      "exercise_name": "Bicep Curls",
+      "simulated_satisfaction": 5.346833686650803,
+      "simulated_reward": 2.0693667373301605
+    },
+    {
+      "timestamp": "2026-04-10T05:18:30.979585",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "simulated_satisfaction": 4.253657198000179,
+      "simulated_reward": 2.0
+    },
+    {
+      "timestamp": "2026-04-10T05:18:30.979585",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "simulated_satisfaction": 7.493884911032489,
+      "simulated_reward": 0.7493884911032489
+    },
+    {
+      "timestamp": "2026-04-10T05:18:30.979585",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "simulated_satisfaction": 6.830390134220385,
+      "simulated_reward": 0.6830390134220385
+    },
+    {
+      "timestamp": "2026-04-10T05:18:30.979585",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "simulated_satisfaction": 6.86493091391082,
+      "simulated_reward": 0.686493091391082
+    }
+  ],
+  "user_feedback": {
+    "planks": 8.051127349345105,
+    "bicep_curls": 7.710137536628542,
+    "walking": 8.812763484055282,
+    "yoga": 7.001715443882152,
+    "stretching": 9.546089322913428,
+    "crunches": 9.866214373666994
+  }
+}

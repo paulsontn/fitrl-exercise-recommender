@@ -1,0 +1,29 @@
+# Virtual Environments (CRITICAL: keeps your repo small!)
+.venv/
+venv/
+env/
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environment Variables & Secrets
+.env
+.env.local
+
+# Streamlit & Jupyter
+.streamlit/secrets.toml
+.ipynb_checkpoints/
+
+# Saved Model Weights / Large Checkpoints (uncomment if > 50MB)
+# *.pt
+# *.pth
+# *.ckpt
+
+# IDE & OS Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

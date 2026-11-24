@@ -1,0 +1,47 @@
+{
+  "recommendation_history": [
+    {
+      "timestamp": "2025-12-07T19:28:14.700043",
+      "exercise_id": "lunges",
+      "exercise_name": "Lunges",
+      "duration_minutes": 15,
+      "total_calories": 105
+    },
+    {
+      "timestamp": "2025-12-07T19:28:14.700043",
+      "exercise_id": "pushups",
+      "exercise_name": "Push-ups",
+      "duration_minutes": 15,
+      "total_calories": 105
+    },
+    {
+      "timestamp": "2025-12-07T19:28:14.700043",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "duration_minutes": 30,
+      "total_calories": 120
+    },
+    {
+      "timestamp": "2025-12-07T19:56:44.778044",
+      "exercise_id": "pushups",
+      "exercise_name": "Push-ups",
+      "duration_minutes": 15,
+      "total_calories": 105
+    },
+    {
+      "timestamp": "2025-12-07T19:56:44.778044",
+      "exercise_id": "squats",
+      "exercise_name": "Squats",
+      "duration_minutes": 15,
+      "total_calories": 120
+    },
+    {
+      "timestamp": "2025-12-07T19:56:44.778044",
+      "exercise_id": "jogging",
+      "exercise_name": "Jogging",
+      "duration_minutes": 30,
+      "total_calories": 240
+    }
+  ],
+  "user_feedback": {}
+}

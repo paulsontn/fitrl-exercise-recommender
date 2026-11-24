@@ -1,0 +1,75 @@
+{
+  "recommendation_history": [
+    {
+      "timestamp": "2025-12-07T18:07:59.667356",
+      "exercise_id": "pushups",
+      "exercise_name": "Push-ups",
+      "simulated_satisfaction": 8.2254247111597,
+      "simulated_reward": 2.6450849422319402
+    },
+    {
+      "timestamp": "2025-12-07T18:07:59.667356",
+      "exercise_id": "jogging",
+      "exercise_name": "Jogging",
+      "simulated_satisfaction": 8.626616148000235,
+      "simulated_reward": 2.725323229600047
+    },
+    {
+      "timestamp": "2025-12-07T18:07:59.667356",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 7.259713017690044,
+      "simulated_reward": 0.7259713017690044
+    },
+    {
+      "timestamp": "2025-12-07T18:07:59.667356",
+      "exercise_id": "dumbbell_rows",
+      "exercise_name": "Dumbbell Rows",
+      "simulated_satisfaction": 6.807689607237138,
+      "simulated_reward": 2.3615379214474275
+    },
+    {
+      "timestamp": "2025-12-07T18:07:59.667356",
+      "exercise_id": "squats",
+      "exercise_name": "Squats",
+      "simulated_satisfaction": 7.605828381834076,
+      "simulated_reward": 2.5211656763668153
+    },
+    {
+      "timestamp": "2025-12-07T18:09:07.326419",
+      "exercise_id": "pushups",
+      "exercise_name": "Push-ups",
+      "simulated_satisfaction": 6.746028832102863,
+      "simulated_reward": 2.3492057664205728
+    },
+    {
+      "timestamp": "2025-12-07T18:09:07.326419",
+      "exercise_id": "jogging",
+      "exercise_name": "Jogging",
+      "simulated_satisfaction": 7.147425388071775,
+      "simulated_reward": 2.429485077614355
+    },
+    {
+      "timestamp": "2025-12-07T18:09:07.326419",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "simulated_satisfaction": 6.526521677291486,
+      "simulated_reward": 0.6526521677291486
+    },
+    {
+      "timestamp": "2025-12-07T18:09:07.326419",
+      "exercise_id": "dumbbell_rows",
+      "exercise_name": "Dumbbell Rows",
+      "simulated_satisfaction": 7.043094113451941,
+      "simulated_reward": 2.4086188226903884
+    },
+    {
+      "timestamp": "2025-12-07T18:09:07.326419",
+      "exercise_id": "squats",
+      "exercise_name": "Squats",
+      "simulated_satisfaction": 7.245135995042094,
+      "simulated_reward": 2.4490271990084187
+    }
+  ],
+  "user_feedback": {}
+}

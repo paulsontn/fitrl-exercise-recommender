@@ -1,0 +1,101 @@
+{
+  "profile": {
+    "user_id": "demo_user_001",
+    "age": 30,
+    "fitness_level": "INTERMEDIATE",
+    "goals": [
+      "muscle_gain",
+      "weight_loss"
+    ],
+    "injuries": [],
+    "equipment_access": [
+      "dumbbells",
+      "mat"
+    ]
+  },
+  "recommendations": [
+    {
+      "exercise_id": "walking_001",
+      "exercise_name": "Walking",
+      "timestamp": "2024-12-11T10:00:00"
+    },
+    {
+      "exercise_id": "squats_003",
+      "exercise_name": "Squats",
+      "timestamp": "2024-12-11T10:30:00"
+    },
+    {
+      "exercise_id": "pushups_004",
+      "exercise_name": "Push-ups",
+      "timestamp": "2024-12-10T09:00:00"
+    }
+  ],
+  "completions": [
+    {
+      "exercise_id": "walking_001",
+      "exercise_name": "Walking",
+      "duration_minutes": 30,
+      "calories_burned": 120,
+      "intensity_level": 3,
+      "primary_muscles": [
+        "glutes",
+        "cardio"
+      ],
+      "satisfaction_score": 7.5,
+      "completion_date": "2024-12-11 10:30:00"
+    },
+    {
+      "exercise_id": "squats_003",
+      "exercise_name": "Squats",
+      "duration_minutes": 20,
+      "calories_burned": 140,
+      "intensity_level": 6,
+      "primary_muscles": [
+        "quadriceps",
+        "glutes"
+      ],
+      "satisfaction_score": 8.0,
+      "completion_date": "2024-12-11 11:00:00"
+    },
+    {
+      "exercise_id": "pushups_004",
+      "exercise_name": "Push-ups",
+      "duration_minutes": 15,
+      "calories_burned": 85,
+      "intensity_level": 5,
+      "primary_muscles": [
+        "chest",
+        "triceps"
+      ],
+      "satisfaction_score": 7.0,
+      "completion_date": "2024-12-10 09:30:00"
+    },
+    {
+      "exercise_id": "yoga_002",
+      "exercise_name": "Yoga",
+      "duration_minutes": 45,
+      "calories_burned": 135,
+      "intensity_level": 3,
+      "primary_muscles": [
+        "flexibility",
+        "cardio"
+      ],
+      "satisfaction_score": 8.5,
+      "completion_date": "2024-12-09 18:00:00"
+    },
+    {
+      "exercise_id": "running_005",
+      "exercise_name": "Running",
+      "duration_minutes": 30,
+      "calories_burned": 300,
+      "intensity_level": 8,
+      "primary_muscles": [
+        "cardio",
+        "glutes",
+        "quadriceps"
+      ],
+      "satisfaction_score": 6.5,
+      "completion_date": "2024-12-08 06:30:00"
+    }
+  ]
+}
