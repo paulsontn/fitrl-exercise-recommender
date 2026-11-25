@@ -230,6 +230,25 @@ def complete_exercise(user_id: str):
 
         exercise_id = str(data['exercise_id'])
         satisfaction = data.get('satisfaction_score', None)
+        if satisfaction is not None:
+            satisfaction = float(satisfaction)
+
+        recommender = recommendation_system.get_recommender(user_id)
+        entry = recommender.record_completion(exercise_id, satisfaction_score=satisfaction)
+
+        return jsonify({
+            'status': 'success',
+            'message': 'Exercise completion recorded',
+            'entry': entry
+        }), 200
+
+    except ValueError as e:
+        return jsonify({'error': str(e)}), 400
+    except Exception as e:
+        logger.error(f"Error recording completion: {str(e)}")
+        return jsonify({'error': 'Internal server error'}), 500
+
+
 @app.route('/api/users/<user_id>', methods=['GET', 'DELETE', 'OPTIONS'])
 def get_or_delete_user_profile(user_id: str):
     """Get full user profile details or permanently delete a user."""
