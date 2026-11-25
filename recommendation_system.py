@@ -683,3 +683,22 @@ class RecommendationSystem:
         if user_id not in self.user_manager.profiles:
             raise ValueError(f"User '{user_id}' not found")
         return self.user_manager.profiles[user_id]
+
+    def delete_user(self, user_id: str, delete_history: bool = True) -> bool:
+        """Delete a registered user profile (and optionally their saved history file)."""
+        if user_id not in self.user_manager.profiles:
+            raise ValueError(f"User '{user_id}' not found")
+
+        del self.user_manager.profiles[user_id]
+        self.recommenders.pop(user_id, None)
+        self._save_profiles()
+
+        if delete_history:
+            history_path = self.data_dir / f"{user_id}_history.json"
+            if history_path.exists():
+                try:
+                    history_path.unlink()
+                except Exception:
+                    pass
+
+        return True

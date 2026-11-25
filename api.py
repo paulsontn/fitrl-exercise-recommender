@@ -230,24 +230,25 @@ def complete_exercise(user_id: str):
 
         exercise_id = str(data['exercise_id'])
         satisfaction = data.get('satisfaction_score', None)
-        if satisfaction is not None:
-            satisfaction = float(satisfaction)
+@app.route('/api/users/<user_id>', methods=['GET', 'DELETE', 'OPTIONS'])
+def get_or_delete_user_profile(user_id: str):
+    """Get full user profile details or permanently delete a user."""
+    if request.method == 'OPTIONS':
+        return '', 204
 
-        recommender = recommendation_system.get_recommender(user_id)
-        entry = recommender.record_completion(exercise_id, satisfaction_score=satisfaction)
+    if request.method == 'DELETE':
+        try:
+            recommendation_system.delete_user(user_id, delete_history=True)
+            return jsonify({
+                'status': 'success',
+                'message': f'User {user_id} deleted'
+            }), 200
+        except ValueError as e:
+            return jsonify({'error': str(e)}), 404
+        except Exception as e:
+            logger.error(f"Error deleting user: {str(e)}")
+            return jsonify({'error': 'Internal server error'}), 500
 
-        return jsonify({'status': 'success', 'entry': entry}), 200
-
-    except ValueError as e:
-        return jsonify({'error': str(e)}), 400
-    except Exception as e:
-        logger.error(f"Error recording completion: {str(e)}")
-        return jsonify({'error': 'Internal server error'}), 500
-
-
-@app.route('/api/users/<user_id>', methods=['GET'])
-def get_user_profile(user_id: str):
-    """Get full user profile details."""
     try:
         profile = recommendation_system.get_user_profile(user_id)
         return jsonify({
