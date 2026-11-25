@@ -1,0 +1,109 @@
+{
+  "user_001": {
+    "user_id": "user_001",
+    "age": 25,
+    "fitness_level": "BEGINNER",
+    "goals": [
+      "weight_loss",
+      "general_fitness"
+    ],
+    "available_time": 30,
+    "injuries": [],
+    "equipment_access": [
+      "dumbbells",
+      "bench",
+      "pull_up_bar"
+    ],
+    "preferred_exercises": [],
+    "fatigue": 3.5,
+    "soreness": 0.0,
+    "sleep_hours": 8.0,
+    "resting_heart_rate": 60
+  },
+  "user_002": {
+    "user_id": "user_002",
+    "age": 35,
+    "fitness_level": "INTERMEDIATE",
+    "goals": [
+      "muscle_gain",
+      "endurance"
+    ],
+    "available_time": 60,
+    "injuries": [
+      "lower_back_pain"
+    ],
+    "equipment_access": [
+      "dumbbells",
+      "barbell",
+      "bench"
+    ],
+    "preferred_exercises": [
+      "bench_press",
+      "dumbbell_rows"
+    ],
+    "fatigue": 0.0,
+    "soreness": 0.0,
+    "sleep_hours": 8.0,
+    "resting_heart_rate": 60
+  },
+  "user_003": {
+    "user_id": "user_003",
+    "age": 45,
+    "fitness_level": "BEGINNER",
+    "goals": [
+      "flexibility",
+      "general_fitness"
+    ],
+    "available_time": 45,
+    "injuries": [
+      "knee_pain"
+    ],
+    "equipment_access": [],
+    "preferred_exercises": [
+      "yoga",
+      "stretching",
+      "walking"
+    ],
+    "fatigue": 0.0,
+    "soreness": 0.0,
+    "sleep_hours": 8.0,
+    "resting_heart_rate": 60
+  },
+  "user_9": {
+    "user_id": "user_9",
+    "age": 25,
+    "fitness_level": "BEGINNER",
+    "goals": [
+      "weight_loss",
+      "general_fitness"
+    ],
+    "available_time": 30,
+    "injuries": [],
+    "equipment_access": [
+      "dumbbells",
+      "bench",
+      "pull_up_bar"
+    ],
+    "preferred_exercises": [],
+    "fatigue": 3.5,
+    "soreness": 0.0,
+    "sleep_hours": 8.0,
+    "resting_heart_rate": 60
+  },
+  "user_8": {
+    "user_id": "user_8",
+    "age": 21,
+    "fitness_level": "BEGINNER",
+    "goals": [
+      "weight_loss"
+    ],
+    "available_time": 120,
+    "injuries": [],
+    "equipment_access": [],
+    "preferred_exercises": [],
+    "fatigue": 3.5,
+    "soreness": 0.0,
+    "sleep_hours": 8.0,
+    "resting_heart_rate": 60
+  }
+}

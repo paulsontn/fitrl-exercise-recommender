@@ -1,4 +1,6 @@
 {
+  "user_id": "user_003",
+  "updated_at": "2026-11-25T04:45:19.856625",
   "recommendation_history": [
     {
       "timestamp": "2025-12-07T18:20:27.915547",
@@ -2379,13 +2381,193 @@
       "exercise_name": "Stretching",
       "simulated_satisfaction": 7.27638625517486,
       "simulated_reward": 1.227638625517486
+    },
+    {
+      "timestamp": "2026-11-24T11:50:43.441946",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "duration_minutes": 12,
+      "intensity_level": 5,
+      "calories_burned": 5,
+      "total_calories": 60,
+      "completed": false,
+      "simulated_satisfaction": 5.735866862884129,
+      "simulated_reward": 2.147173372576826
+    },
+    {
+      "timestamp": "2026-11-24T11:50:43.441946",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "duration_minutes": 30,
+      "intensity_level": 3,
+      "calories_burned": 4,
+      "total_calories": 120,
+      "completed": false,
+      "simulated_satisfaction": 6.64841331891829,
+      "simulated_reward": 0.6648413318918289
+    },
+    {
+      "timestamp": "2026-11-24T11:50:43.441946",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "duration_minutes": 45,
+      "intensity_level": 3,
+      "calories_burned": 3,
+      "total_calories": 135,
+      "completed": false,
+      "simulated_satisfaction": 7.64497768154798,
+      "simulated_reward": 1.264497768154798
+    },
+    {
+      "timestamp": "2026-11-24T11:50:43.441946",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "duration_minutes": 20,
+      "intensity_level": 2,
+      "calories_burned": 1,
+      "total_calories": 20,
+      "completed": false,
+      "simulated_satisfaction": 7.433883567511997,
+      "simulated_reward": 1.2433883567511996
+    },
+    {
+      "timestamp": "2026-11-24T11:50:43.441946",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "duration_minutes": 10,
+      "intensity_level": 4,
+      "calories_burned": 3,
+      "total_calories": 30,
+      "completed": false,
+      "simulated_satisfaction": 7.802393155174679,
+      "simulated_reward": 0.7802393155174678
+    },
+    {
+      "timestamp": "2026-11-24T11:50:43.458928",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "duration_minutes": 12,
+      "intensity_level": 5,
+      "calories_burned": 5,
+      "total_calories": 60,
+      "completed": false,
+      "simulated_satisfaction": 5.166534752023973,
+      "simulated_reward": 2.0333069504047945
+    },
+    {
+      "timestamp": "2026-11-24T11:50:43.458928",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "duration_minutes": 30,
+      "intensity_level": 3,
+      "calories_burned": 4,
+      "total_calories": 120,
+      "completed": false,
+      "simulated_satisfaction": 5.959033114227449,
+      "simulated_reward": 0.5959033114227449
+    },
+    {
+      "timestamp": "2026-11-25T04:45:19.827368",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "duration_minutes": 10,
+      "intensity_level": 4,
+      "calories_burned": 3,
+      "total_calories": 30,
+      "completed": false,
+      "simulated_satisfaction": 7.133403689008767,
+      "simulated_reward": 0.7133403689008767
+    },
+    {
+      "timestamp": "2026-11-25T04:45:19.827368",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "duration_minutes": 20,
+      "intensity_level": 2,
+      "calories_burned": 1,
+      "total_calories": 20,
+      "completed": false,
+      "simulated_satisfaction": 7.329056260750981,
+      "simulated_reward": 1.2329056260750981
+    },
+    {
+      "timestamp": "2026-11-25T04:45:19.827368",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "duration_minutes": 30,
+      "intensity_level": 3,
+      "calories_burned": 4,
+      "total_calories": 120,
+      "completed": false,
+      "simulated_satisfaction": 7.05971710779174,
+      "simulated_reward": 0.705971710779174
+    },
+    {
+      "timestamp": "2026-11-25T04:45:19.827368",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "duration_minutes": 45,
+      "intensity_level": 3,
+      "calories_burned": 3,
+      "total_calories": 135,
+      "completed": false,
+      "simulated_satisfaction": 8.189855387669757,
+      "simulated_reward": 1.3189855387669758
+    },
+    {
+      "timestamp": "2026-11-25T04:45:19.827368",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "duration_minutes": 12,
+      "intensity_level": 5,
+      "calories_burned": 5,
+      "total_calories": 60,
+      "completed": false,
+      "simulated_satisfaction": 5.100490697942616,
+      "simulated_reward": 2.0200981395885234
+    },
+    {
+      "timestamp": "2026-11-25T04:45:19.837281",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "duration_minutes": 10,
+      "intensity_level": 4,
+      "calories_burned": 3,
+      "total_calories": 30,
+      "completed": false,
+      "simulated_satisfaction": 7.546454114265473,
+      "simulated_reward": 0.7546454114265473
+    },
+    {
+      "timestamp": "2026-11-25T04:45:19.837281",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "duration_minutes": 20,
+      "intensity_level": 2,
+      "calories_burned": 1,
+      "total_calories": 20,
+      "completed": false,
+      "simulated_satisfaction": 7.20713823472195,
+      "simulated_reward": 1.220713823472195
+    },
+    {
+      "timestamp": "2026-11-25T04:45:19.837281",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "duration_minutes": 12,
+      "intensity_level": 5,
+      "calories_burned": 5,
+      "total_calories": 60,
+      "completed": false,
+      "simulated_satisfaction": 5.563354404071234,
+      "simulated_reward": 2.112670880814247
     }
   ],
   "user_feedback": {
-    "crunches": 6.508995191859281,
-    "yoga": 6.502000612882236,
-    "walking": 9.818872264489709,
-    "stretching": 7.551118890514763,
-    "planks": 7.039405850670811
+    "crunches": 8.061040979901845,
+    "yoga": 6.992236023205252,
+    "walking": 7.113520344088413,
+    "stretching": 7.48541310941779,
+    "planks": 6.510203879327547
   }
 }

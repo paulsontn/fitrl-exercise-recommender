@@ -1,0 +1,69 @@
+{
+  "user_id": "user_8",
+  "updated_at": "2026-11-25T04:51:31.617776",
+  "recommendation_history": [
+    {
+      "timestamp": "2026-11-25T04:51:15.028360",
+      "exercise_id": "yoga",
+      "exercise_name": "Yoga",
+      "duration_minutes": 45,
+      "intensity_level": 3,
+      "calories_burned": 3,
+      "total_calories": 135,
+      "completed": false,
+      "simulated_satisfaction": 8.123783778648296,
+      "simulated_reward": 0.8123783778648296
+    },
+    {
+      "timestamp": "2026-11-25T04:51:15.028360",
+      "exercise_id": "crunches",
+      "exercise_name": "Crunches",
+      "duration_minutes": 10,
+      "intensity_level": 4,
+      "calories_burned": 3,
+      "total_calories": 30,
+      "completed": false,
+      "simulated_satisfaction": 6.865301672747728,
+      "simulated_reward": 0.6865301672747728
+    },
+    {
+      "timestamp": "2026-11-25T04:51:15.028360",
+      "exercise_id": "stretching",
+      "exercise_name": "Stretching",
+      "duration_minutes": 20,
+      "intensity_level": 2,
+      "calories_burned": 1,
+      "total_calories": 20,
+      "completed": false,
+      "simulated_satisfaction": 7.461720684177035,
+      "simulated_reward": 0.7461720684177034
+    },
+    {
+      "timestamp": "2026-11-25T04:51:15.028360",
+      "exercise_id": "planks",
+      "exercise_name": "Planks",
+      "duration_minutes": 12,
+      "intensity_level": 5,
+      "calories_burned": 5,
+      "total_calories": 60,
+      "completed": false,
+      "simulated_satisfaction": 5.12771785462326,
+      "simulated_reward": 0.5127717854623259
+    },
+    {
+      "timestamp": "2026-11-25T04:51:15.028360",
+      "exercise_id": "walking",
+      "exercise_name": "Walking",
+      "duration_minutes": 30,
+      "intensity_level": 3,
+      "calories_burned": 4,
+      "total_calories": 120,
+      "completed": false,
+      "simulated_satisfaction": 7.4186500839854554,
+      "simulated_reward": 0.7418650083985455
+    }
+  ],
+  "user_feedback": {
+    "crunches": 8.5
+  }
+}
