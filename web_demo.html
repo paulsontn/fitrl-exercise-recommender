@@ -231,7 +231,7 @@
                 </div>
 
                 <div class="mt-6 flex flex-wrap items-center gap-4">
-                    <button onclick="registerUser()" class="px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-semibold text-sm shadow-lg shadow-indigo-600/25 transition-all cursor-pointer">
+                    <button id="saveProfileBtn" onclick="registerUser()" class="px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-semibold text-sm shadow-lg shadow-indigo-600/25 transition-all cursor-pointer">
                         💾 Save Profile & Sync RL Agent
                     </button>
                 </div>
@@ -451,9 +451,8 @@
             </div>
         </section>
 
-        <!-- TAB: DAILY GYM & HOME COMPANION (CALORIE/PROTEIN CALC, LIVE SET TRACKER, HABITS & BODY LOG) -->
+        <!-- TAB: DAILY GYM & HOME COMPANION -->
         <section id="tab-dailytracker" class="panel hidden space-y-6">
-            <!-- 1. BMI, Daily Calorie & Protein Calculator -->
             <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl">
                 <div class="pb-5 border-b border-slate-800">
                     <span class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-cyan-500/15 text-cyan-300 border border-cyan-500/30">Essential Daily Nutrition Targets</span>
@@ -500,9 +499,7 @@
                 <div id="bmiGuidanceBox" class="mt-4"></div>
             </div>
 
-            <!-- 2. Live Set-by-Set Workout & Rest Timer Tracker + Daily Habit Checklist -->
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <!-- Live Set Logger (2 cols) -->
                 <div class="lg:col-span-2 bg-slate-900/80 border border-slate-800 rounded-2xl p-6 shadow-xl">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-slate-800">
                         <div>
@@ -515,7 +512,6 @@
                         </div>
                     </div>
 
-                    <!-- Add Exercise to Live Session -->
                     <div class="grid grid-cols-1 sm:grid-cols-4 gap-2.5 mt-4">
                         <input type="text" id="liveExName" placeholder="Exercise (e.g. Squats / Bench Press)" class="sm:col-span-2 rounded-xl bg-slate-800 border border-slate-700 px-3 py-2 text-xs sm:text-sm text-white">
                         <input type="text" id="liveExTarget" placeholder="Target (e.g. 3 sets × 12 reps)" class="rounded-xl bg-slate-800 border border-slate-700 px-3 py-2 text-xs sm:text-sm text-white">
@@ -525,9 +521,7 @@
                     <div id="liveSessionList" class="mt-4 space-y-3"></div>
                 </div>
 
-                <!-- Right Column: Daily Habits + Body Measurements -->
                 <div class="space-y-6">
-                    <!-- Daily Hydration & Habit Checklist -->
                     <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 shadow-xl">
                         <h3 class="text-lg font-bold text-white">✅ Today's Non-Negotiables</h3>
                         <p class="text-xs text-slate-400 mt-0.5 mb-4">Tap to track your daily water & recovery habits.</p>
@@ -548,25 +542,24 @@
 
                         <div class="space-y-2 text-xs sm:text-sm text-slate-200">
                             <label class="flex items-center gap-2.5 p-2.5 rounded-xl bg-slate-950/60 border border-slate-800 cursor-pointer">
-                                <input type="checkbox" class="accent-emerald-500 w-4 h-4" onchange="showToast('Daily steps logged!', '👟')">
+                                <input type="checkbox" class="accent-emerald-500 w-4 h-4">
                                 <span>👟 Completed 8,000–12,000 daily steps</span>
                             </label>
                             <label class="flex items-center gap-2.5 p-2.5 rounded-xl bg-slate-950/60 border border-slate-800 cursor-pointer">
-                                <input type="checkbox" class="accent-emerald-500 w-4 h-4" onchange="showToast('Protein target checked!', '🥚')">
+                                <input type="checkbox" class="accent-emerald-500 w-4 h-4">
                                 <span>🥚 Ate protein in every meal today</span>
                             </label>
                             <label class="flex items-center gap-2.5 p-2.5 rounded-xl bg-slate-950/60 border border-slate-800 cursor-pointer">
-                                <input type="checkbox" class="accent-emerald-500 w-4 h-4" onchange="showToast('Zero sugar streak!', '🚫')">
+                                <input type="checkbox" class="accent-emerald-500 w-4 h-4">
                                 <span>🚫 Zero sugary soft drinks / junk food</span>
                             </label>
                             <label class="flex items-center gap-2.5 p-2.5 rounded-xl bg-slate-950/60 border border-slate-800 cursor-pointer">
-                                <input type="checkbox" class="accent-emerald-500 w-4 h-4" onchange="showToast('Sleep logged!', '😴')">
+                                <input type="checkbox" class="accent-emerald-500 w-4 h-4">
                                 <span>😴 Slept 7–8 hours last night</span>
                             </label>
                         </div>
                     </div>
 
-                    <!-- Body Weight & Waist Progress Tracker -->
                     <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 shadow-xl">
                         <h3 class="text-lg font-bold text-white">📏 Body Measurement Log</h3>
                         <p class="text-xs text-slate-400 mt-0.5 mb-3">Log every 1–2 weeks to verify fat loss or muscle gain.</p>
@@ -585,7 +578,6 @@
 
         <!-- TAB 4: EXERCISE LIBRARY & KNOWN EXERCISE CHECKER -->
         <section id="tab-catalog" class="panel hidden space-y-6">
-            <!-- Known Exercise Analyzer Card -->
             <div class="bg-gradient-to-br from-slate-900 via-slate-900 to-indigo-950/40 border border-indigo-500/30 rounded-2xl p-6 sm:p-8 shadow-xl">
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-slate-800">
                     <div>
@@ -610,7 +602,6 @@
                     </div>
                 </div>
 
-                <!-- Quick-Pick Basic Exercise Chips -->
                 <div class="flex flex-wrap items-center gap-2 mt-3 text-xs">
                     <span class="text-slate-400 font-medium">Quick Try:</span>
                     <button type="button" onclick="quickAnalyzePreset('Jumping Jacks')" class="px-2.5 py-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 border border-slate-700 cursor-pointer">Jumping Jacks</button>
@@ -647,6 +638,7 @@
             <div id="catalogCards" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"></div>
         </section>
     </main>
+
     <!-- Delete User Confirmation Modal -->
     <div id="deleteUserModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/80 backdrop-blur-sm p-4">
         <div class="bg-slate-900 border border-rose-500/40 rounded-2xl max-w-sm w-full p-6 text-center shadow-2xl">
@@ -755,16 +747,80 @@
                 .map(cb => cb.value);
         }
 
-        async function checkHealth() {
+        async function registerUser() {
+            const userId = document.getElementById('userId').value.trim();
+            const age = parseInt(document.getElementById('age').value, 10);
+            const fitnessLevel = document.getElementById('fitnessLevel').value;
+            const availableTime = parseInt(document.getElementById('availableTime').value, 10);
+            const goals = getCheckedValues('goalChips');
+            const equipment = getCheckedValues('equipmentChips');
+            const injuries = getCheckedValues('injuryChips');
+            const fatigue = parseFloat(document.getElementById('fatigue').value) || 0;
+            const soreness = parseFloat(document.getElementById('soreness').value) || 0;
+            const sleepHours = parseFloat(document.getElementById('sleepHours').value) || 8;
+            const restingHr = parseInt(document.getElementById('restingHr').value, 10) || 65;
+
+            if (!userId) {
+                showBanner('registerBanner', 'Please enter a valid User ID.', 'error');
+                showToast('Please enter a User ID', '⚠️');
+                return;
+            }
+
+            const btn = document.getElementById('saveProfileBtn');
+            const origLabel = btn.innerHTML;
+            btn.disabled = true;
+            btn.innerHTML = '⏳ Saving & Syncing...';
+
+            try {
+                const res = await fetch(`${API_BASE}/api/users/register`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        user_id: userId,
+                        age: age,
+                        fitness_level: fitnessLevel,
+                        available_time: availableTime,
+                        goals: goals.length ? goals : ['general_fitness'],
+                        equipment_access: equipment,
+                        injuries: injuries,
+                        fatigue: fatigue,
+                        soreness: soreness,
+                        sleep_hours: sleepHours,
+                        resting_heart_rate: restingHr
+                    })
+                });
+                const data = await res.json();
+                if (res.ok) {
+                    showBanner(
+                        'registerBanner',
+                        `✅ Saved profile for "${data.user_id}" (${data.suitable_exercises_count} safe exercises matched).`,
+                        'success'
+                    );
+                    showToast(`Profile "${data.user_id}" saved!`, '💾');
+                    await checkHealth(data.user_id);
+                } else {
+                    showBanner('registerBanner', `❌ ${data.error || 'Failed to save profile'}`, 'error');
+                    showToast(data.error || 'Save failed', '❌');
+                }
+            } catch (err) {
+                showBanner('registerBanner', `❌ Connection error: ${err.message}`, 'error');
+                showToast('API offline — start python api.py', '❌');
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = origLabel;
+            }
+        }
+
+        async function checkHealth(preferredUserId = null) {
             const dot = document.getElementById('statusDot');
             const text = document.getElementById('statusText');
             try {
-                const res = await fetch(`${API_BASE}/health`);
+                const res = await fetch(`${API_BASE}/health?_t=${Date.now()}`, { cache: 'no-store' });
                 const data = await res.json();
                 if (res.ok) {
                     dot.className = 'w-2 h-2 rounded-full bg-emerald-400';
                     text.textContent = `Connected • ${data.total_exercises} exercises • ${data.registered_users} users`;
-                    await loadRegisteredUsers();
+                    await loadRegisteredUsers(preferredUserId);
                 } else {
                     throw new Error('Health check failed');
                 }
@@ -794,7 +850,7 @@
 
         async function loadUserProfileIntoForm(uid) {
             try {
-                const res = await fetch(`${API_BASE}/api/users/${encodeURIComponent(uid)}`);
+                const res = await fetch(`${API_BASE}/api/users/${encodeURIComponent(uid)}?_t=${Date.now()}`, { cache: 'no-store' });
                 if (!res.ok) return;
                 const p = await res.json();
                 document.getElementById('age').value = p.age ?? 28;
@@ -816,30 +872,37 @@
                 document.getElementById('restingHr').value = p.resting_heart_rate ?? 65;
             } catch (e) {}
         }
-        async function loadRegisteredUsers() {
+
+        async function loadRegisteredUsers(preferredUserId = null) {
             try {
-                const res = await fetch(`${API_BASE}/api/users`);
+                const res = await fetch(`${API_BASE}/api/users?_t=${Date.now()}`, { cache: 'no-store' });
                 if (!res.ok) return;
                 const data = await res.json();
                 const select = document.getElementById('quickUserSelect');
                 if (data.users && data.users.length > 0) {
-                    const current = select.value;
+                    const current = preferredUserId || select.value;
                     select.innerHTML = data.users.map(u => `<option value="${u.user_id}">${u.user_id} (${u.fitness_level})</option>`).join('');
                     if (data.users.some(u => u.user_id === current)) {
                         select.value = current;
-                        loadUserProfileIntoForm(current);
+                        syncSelectedUser(current, true);
                     } else {
                         syncSelectedUser(data.users[0].user_id, true);
                     }
                 } else {
-                    select.innerHTML = '<option value="user_001">user_001 (No saved users)</option>';
+                    select.innerHTML = '<option value="">No saved users</option>';
+                    document.getElementById('userId').value = 'user_001';
+                    document.getElementById('recUserId').value = 'user_001';
+                    document.getElementById('analyticsUserId').value = 'user_001';
                 }
             } catch (e) {}
         }
 
         function openDeleteUserModal() {
             const uid = document.getElementById('quickUserSelect').value;
-            if (!uid) return;
+            if (!uid) {
+                showToast('No user selected to delete', '⚠️');
+                return;
+            }
             document.getElementById('deleteUserModalTitle').textContent = `Delete "${uid}"?`;
             const modal = document.getElementById('deleteUserModal');
             modal.classList.remove('hidden');
@@ -954,7 +1017,6 @@
                                 </button>
                             </div>
 
-                            <!-- Intensity Bar -->
                             <div class="mt-3">
                                 <div class="flex justify-between text-xs text-slate-400 mb-1">
                                     <span>Intensity: <strong class="text-slate-200">${rec.intensity_level}/10</strong></span>
@@ -1047,7 +1109,7 @@
             if (!userId) return;
 
             try {
-                const res = await fetch(`${API_BASE}/api/analytics/${encodeURIComponent(userId)}`);
+                const res = await fetch(`${API_BASE}/api/analytics/${encodeURIComponent(userId)}?_t=${Date.now()}`, { cache: 'no-store' });
                 const data = await res.json();
                 if (!res.ok) {
                     showBanner('analyticsBanner', `❌ ${data.error}`, 'error');
@@ -1127,7 +1189,6 @@
                 }
             } catch (err) {}
 
-            // Fallback built-in catalog when API is offline so the library always works
             cachedExercises = [
                 { exercise_id: 'squats', name: 'Bodyweight / Barbell Squats', difficulty: 'BEGINNER', duration_minutes: 12, intensity_level: 6, calories_burned: 7.5, primary_muscles: ['quadriceps', 'glutes', 'hamstrings', 'core'], equipment_required: [], description: 'Foundational lower-body strength movement targeting thighs, glutes, and core.' },
                 { exercise_id: 'pushups', name: 'Push-Ups', difficulty: 'BEGINNER', duration_minutes: 10, intensity_level: 6, calories_burned: 7.0, primary_muscles: ['chest', 'shoulders', 'triceps', 'core'], equipment_required: [], description: 'Classic upper-body pushing exercise building chest, shoulder, and arm strength.' },
@@ -1207,7 +1268,6 @@
             showToast(`Added "${name}" to Daily Companion!`, '🏋️');
         }
 
-        // Interactive Countdown Timer Modal
         function startExerciseTimer(name, minutes) {
             clearInterval(timerInterval);
             timerSecondsLeft = Math.max(1, Math.round(minutes * 60));
@@ -1251,7 +1311,6 @@
             modal.classList.remove('flex');
         }
 
-        // Daily Gym & Home Companion Logic (BMI/Calories/Protein, Live Set Tracker, Water & Body Log)
         const TODAY_KEY = new Date().toISOString().slice(0, 10);
         let waterGlasses = parseInt(localStorage.getItem(`fitrl_water_${TODAY_KEY}`) || '0', 10);
         const DEFAULT_LIVE_EXERCISES = [
@@ -1296,7 +1355,6 @@
             const bmiNum = weight / (heightM * heightM);
             const bmi = bmiNum.toFixed(1);
 
-            // Healthy BMI range (18.5 - 24.9) & corresponding healthy weight range for user's height
             const minHealthyWeight = (18.5 * heightM * heightM).toFixed(1);
             const maxHealthyWeight = (24.9 * heightM * heightM).toFixed(1);
             const idealMidWeight = (22.0 * heightM * heightM).toFixed(1);
@@ -1390,14 +1448,12 @@
                             </span>
                         </div>
                         <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">${guidanceDetail}</p>
-
-                        <!-- Visual BMI Scale Bar -->
                         <div class="pt-1">
                             <div class="relative h-2.5 w-full rounded-full overflow-hidden flex">
-                                <div class="bg-cyan-500/80 h-full" style="width: 17.5%" title="Underweight (<18.5)"></div>
-                                <div class="bg-emerald-500/80 h-full" style="width: 32%" title="Healthy (18.5–24.9)"></div>
-                                <div class="bg-amber-500/80 h-full" style="width: 25.5%" title="Overweight (25.0–29.9)"></div>
-                                <div class="bg-rose-500/80 h-full" style="width: 25%" title="Obese (30+)"></div>
+                                <div class="bg-cyan-500/80 h-full" style="width: 17.5%"></div>
+                                <div class="bg-emerald-500/80 h-full" style="width: 32%"></div>
+                                <div class="bg-amber-500/80 h-full" style="width: 25.5%"></div>
+                                <div class="bg-rose-500/80 h-full" style="width: 25%"></div>
                             </div>
                             <div class="relative h-4 mt-1">
                                 <div class="absolute -translate-x-1/2 text-[10px] font-extrabold text-white bg-slate-900 border border-slate-600 px-1.5 py-0.2 rounded" style="left: ${bmiBarPct}%">
@@ -1563,7 +1619,6 @@
             `).join('');
         }
 
-        // Known Exercise Calorie, Intensity & Muscle Lookup
         const LOCAL_EXERCISE_FALLBACK = {
             'jumping jack': { name: 'Jumping Jacks', intensity_level: 7, calories_per_min: 9.0, primary_muscles: ['Cardio', 'Calves', 'Shoulders', 'Core', 'Full Body'], equipment_required: ['Bodyweight'], description: 'Classic full-body aerobic warm-up and fat-burning movement elevating heart rate quickly.' },
             'mountain climber': { name: 'Mountain Climbers', intensity_level: 8, calories_per_min: 10.0, primary_muscles: ['Core', 'Abs', 'Shoulders', 'Hip Flexors', 'Cardio'], equipment_required: ['Bodyweight'], description: 'Dynamic plank-position cardio exercise targeting lower abs and cardiovascular stamina.' },
@@ -1791,7 +1846,6 @@
             `).join('');
         }
 
-        // 5 Standalone Goal-Specific Programmes (Home + Gym Modes, Calories Burned & Target Muscles)
         let activeGoalProgrammeKey = 'fat_loss';
 
         const GOAL_PROGRAMMES_DATA = {
@@ -2642,14 +2696,12 @@
                             </div>
                             <h4 class="text-base font-bold text-white mt-2.5">${item.focus}</h4>
 
-                            <!-- Calories Burned & Environment Strip -->
                             <div class="flex flex-wrap items-center gap-2 mt-2 text-xs">
                                 <span class="font-bold text-emerald-400">🔥 ~${kcal} kcal burned</span>
                                 <span class="text-slate-600">•</span>
                                 <span class="text-slate-400">${env === 'HOME' ? '🏠 Home Routine' : '🏋️ Gym Routine'}</span>
                             </div>
 
-                            <!-- Target Body / Muscle Groups -->
                             <div class="flex flex-wrap gap-1.5 mt-2.5">
                                 ${muscles.map(m => `<span class="text-[11px] font-medium px-2 py-0.5 rounded-md bg-slate-800 text-indigo-200 border border-slate-700/70">🎯 ${m}</span>`).join('')}
                             </div>

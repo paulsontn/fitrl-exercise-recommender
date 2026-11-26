@@ -28,16 +28,6 @@ class ExerciseRecommender:
         user_profile: UserProfile,
         data_dir: str = "data"
     ):
-        """
-        Initialize recommender for a specific user.
-
-        Args:
-            agent: Trained RL agent
-            exercise_db: Exercise database
-            user_id: ID of user
-            user_profile: User's fitness profile
-            data_dir: Directory path for persisting user history
-        """
         self.agent = agent
         self.exercise_db = exercise_db
         self.user_id = user_id
@@ -45,7 +35,6 @@ class ExerciseRecommender:
         self.data_dir = Path(data_dir)
         self.data_dir.mkdir(parents=True, exist_ok=True)
 
-        # Include exercises at or below the user's fitness level so variety isn't overly restricted
         all_exs = exercise_db.get_all_exercises()
         self.suitable_exercises = [
             ex for ex in all_exs
@@ -54,7 +43,6 @@ class ExerciseRecommender:
             and ex.difficulty.value <= user_profile.fitness_level.value
         ]
 
-        # Fallback: if strict filtering yields fewer than 4 exercises, relax difficulty constraint
         if len(self.suitable_exercises) < 4:
             self.suitable_exercises = [
                 ex for ex in all_exs
@@ -62,18 +50,15 @@ class ExerciseRecommender:
                 and ex.requires_equipment(user_profile.equipment_access)
             ]
 
-        # Tracking
         self.recommendation_history: List[Dict[str, Any]] = []
         self.user_feedback: Dict[str, float] = {}
 
-        # Load any persisted history for this user
         try:
             self._load_persistence()
         except Exception:
             pass
 
     def _format_recommendation(self, exercise: Exercise, rank: int, repeat: bool = False) -> Dict[str, Any]:
-        """Format an Exercise object into a standardized recommendation dictionary."""
         rationale = self._generate_rationale(exercise)
         if repeat:
             rationale += " (repeat)"
@@ -102,17 +87,6 @@ class ExerciseRecommender:
         use_exploration: bool = False,
         available_time_minutes: Optional[int] = None
     ) -> List[Dict[str, Any]]:
-        """
-        Get top exercise recommendations for the user.
-
-        Args:
-            num_recommendations: Number of recommendations to return (ignored if available_time_minutes is set)
-            use_exploration: If True, include randomness for exploration
-            available_time_minutes: If set, build a workout fitting this time duration
-
-        Returns:
-            List of recommended exercises with details
-        """
         if not self.suitable_exercises:
             return []
 
@@ -135,7 +109,6 @@ class ExerciseRecommender:
             exercise = self.suitable_exercises[action]
             recommendations.append(self._format_recommendation(exercise, rank=idx + 1))
 
-        # Cycle through suitable exercises if user explicitly requested more than available unique ones
         if len(recommendations) < num_recommendations and self.suitable_exercises:
             i = 0
             while len(recommendations) < num_recommendations:
@@ -145,12 +118,10 @@ class ExerciseRecommender:
                 )
                 i += 1
 
-        # Record standardized recommendation history for analytics
         self._log_recommendations_to_history(recommendations)
         return recommendations
 
     def _log_recommendations_to_history(self, recommendations: List[Dict[str, Any]]):
-        """Record generated recommendations distinctly from completed workouts."""
         try:
             from exercise_env import ExerciseRecommendationEnv
             timestamp = datetime.utcnow().isoformat()
@@ -191,9 +162,6 @@ class ExerciseRecommender:
             pass
 
     def recommend_personalized_workout(self, session_duration: int = 45) -> Dict[str, Any]:
-        """
-        Generate a structured personalized workout plan fitting session_duration.
-        """
         selected_exercises = self._build_timed_workout(session_duration, use_exploration=False)
         total_duration = sum(ex['duration_minutes'] for ex in selected_exercises)
         estimated_calories = sum(ex['total_calories'] for ex in selected_exercises)
@@ -209,13 +177,6 @@ class ExerciseRecommender:
         }
 
     def provide_feedback(self, exercise_id: str, satisfaction_score: float):
-        """
-        Record user feedback on an exercise.
-
-        Args:
-            exercise_id: ID of exercise
-            satisfaction_score: User satisfaction (0-10)
-        """
         if not 0 <= satisfaction_score <= 10:
             raise ValueError("Satisfaction score must be between 0 and 10")
 
@@ -223,10 +184,6 @@ class ExerciseRecommender:
         self._save_persistence()
 
     def record_completion(self, exercise_id: str, satisfaction_score: Optional[float] = None) -> Dict[str, Any]:
-        """
-        Record that the user completed an exercise, compute RL reward,
-        and persist the completion entry.
-        """
         from exercise_env import ExerciseRecommendationEnv
 
         ex = self.exercise_db.get_exercise(exercise_id)
@@ -274,10 +231,8 @@ class ExerciseRecommender:
         return entry
 
     def get_recommendation_history(self) -> List[Dict[str, Any]]:
-        """Get a copy of the user's recommendation and completion history."""
         return self.recommendation_history.copy()
 
-    # ---------------------------- Persistence ----------------------------
     def _history_file_path(self) -> Path:
         self.data_dir.mkdir(parents=True, exist_ok=True)
         return self.data_dir / f"{self.user_id}_history.json"
@@ -305,23 +260,17 @@ class ExerciseRecommender:
         os.replace(tmp, path)
 
     def _get_user_state(self) -> np.ndarray:
-        """Build 15-dimensional state vector matching trained DQN input dimensions."""
         state = np.zeros(15, dtype=np.float32)
-
-        # User profile features
         state[0] = self.user_profile.age / 100.0
         state[1] = self.user_profile.fitness_level.value / 3.0
         state[2] = self.user_profile.available_time / 120.0
         state[3] = len(self.user_profile.goals) / 5.0
-
-        # Biometric / daily condition features
         state[4] = getattr(self.user_profile, 'fatigue', 0.0) / 10.0
         state[5] = getattr(self.user_profile, 'soreness', 0.0) / 10.0
         state[6] = getattr(self.user_profile, 'sleep_hours', 8.0) / 12.0
         state[7] = getattr(self.user_profile, 'resting_heart_rate', 60) / 150.0
         state[8] = len(self.user_profile.injuries) / 5.0
 
-        # Recent feedback scores
         if self.user_feedback:
             feedback_scores = list(self.user_feedback.values())[-6:]
             for i, score in enumerate(feedback_scores):
@@ -330,7 +279,6 @@ class ExerciseRecommender:
         return state
 
     def _get_best_actions(self, num_actions: int) -> List[int]:
-        """Rank suitable exercises using DQN Q-values combined with user profile alignment."""
         if not self.suitable_exercises:
             return []
 
@@ -353,7 +301,6 @@ class ExerciseRecommender:
         return [idx for _, idx in scored_indices[:num_actions]]
 
     def _build_timed_workout(self, available_time_minutes: int, use_exploration: bool = False) -> List[Dict[str, Any]]:
-        """Build a balanced, goal-aligned workout session that fits within available_time_minutes."""
         recommendations = []
         remaining_time = max(5, int(available_time_minutes))
 
@@ -366,7 +313,6 @@ class ExerciseRecommender:
         deferred_indices = []
         rank = 1
 
-        # First pass: prioritize muscle variety while respecting remaining time
         for action_idx in best_actions:
             if remaining_time <= 0:
                 break
@@ -381,7 +327,6 @@ class ExerciseRecommender:
                 selected_muscles.update(ex_muscles)
                 rank += 1
 
-        # Second pass: fill remaining time budget with deferred exercises
         for action_idx in deferred_indices:
             if remaining_time <= 0:
                 break
@@ -391,7 +336,6 @@ class ExerciseRecommender:
                 remaining_time -= exercise.duration_minutes
                 rank += 1
 
-        # Third pass: if user has a long session budget (e.g., 60-120 min), add finisher/accessory rounds
         if remaining_time >= 5 and self.suitable_exercises:
             sorted_by_score = [self.suitable_exercises[i] for i in best_actions]
             already_ids = {r['exercise_id'] for r in recommendations}
@@ -409,10 +353,8 @@ class ExerciseRecommender:
         return recommendations
 
     def _score_exercise_alignment(self, exercise: Exercise, raw_q: float) -> float:
-        """Combine normalized DQN Q-value with goal, equipment, preference, feedback, and recovery alignment."""
         score = float(np.tanh(raw_q)) * 1.5
 
-        # 1. Strong Goal Alignment Boost
         goal_values = {g.value for g in self.user_profile.goals}
         muscles = {m.value for m in exercise.primary_muscles}
         ex_id = exercise.exercise_id.lower()
@@ -435,23 +377,19 @@ class ExerciseRecommender:
         if "general_fitness" in goal_values:
             score += 1.5
 
-        # 2. Equipment Utilization Bonus (prioritize exercises using user's selected equipment)
         user_eq = {e.lower() for e in self.user_profile.equipment_access}
         if user_eq and exercise.equipment_required:
             if set(e.lower() for e in exercise.equipment_required).issubset(user_eq):
                 score += 1.8
 
-        # 3. User Preference Boost
         prefs_lower = [p.strip().lower() for p in self.user_profile.preferred_exercises]
         if ex_id in prefs_lower or exercise.name.lower() in prefs_lower:
             score += 3.0
 
-        # 4. Historical Satisfaction Feedback Adjustment
         if exercise.exercise_id in self.user_feedback:
             fb = self.user_feedback[exercise.exercise_id]
             score += (fb - 5.0) * 0.6
 
-        # 5. Biometric Recovery Penalty for Overly Intense Exercises
         fatigue = getattr(self.user_profile, 'fatigue', 0.0)
         soreness = getattr(self.user_profile, 'soreness', 0.0)
         if (fatigue >= 6.0 or soreness >= 6.0) and exercise.intensity_level >= 7:
@@ -460,7 +398,6 @@ class ExerciseRecommender:
         return score
 
     def _generate_rationale(self, exercise: Exercise) -> str:
-        """Generate clear, user-specific explanation for why an exercise was recommended."""
         reasons = []
         goal_values = {g.value for g in self.user_profile.goals}
         muscles = [m.value.replace('_', ' ') for m in exercise.primary_muscles]
@@ -485,7 +422,6 @@ class ExerciseRecommender:
         return "Matches your profile: " + "; ".join(reasons) + "."
 
     def get_safety_info(self, exercise_id: str) -> Dict[str, Any]:
-        """Compute personalized safety guidance and intensity/duration adjustments."""
         ex = self.exercise_db.get_exercise(exercise_id)
         if ex is None:
             return {
@@ -565,13 +501,6 @@ class RecommendationSystem:
     """Complete recommendation system with user management and persistent profiles."""
 
     def __init__(self, agent_path: Optional[str] = None, data_dir: str = "data"):
-        """
-        Initialize recommendation system.
-
-        Args:
-            agent_path: Path to trained PyTorch agent checkpoint
-            data_dir: Directory where user profiles and histories are stored
-        """
         self.data_dir = Path(data_dir)
         self.data_dir.mkdir(parents=True, exist_ok=True)
         self.profiles_file = self.data_dir / "user_profiles.json"
@@ -617,13 +546,20 @@ class RecommendationSystem:
             pass
 
     def _load_saved_profiles(self):
-        """Restore previously registered user profiles from disk on startup."""
+        """Synchronize in-memory profiles with disk so multi-worker/restarts never drift."""
         from user_profile import UserGoal
         if not self.profiles_file.exists():
             return
         try:
             with open(self.profiles_file, 'r', encoding='utf-8') as f:
                 serialized = json.load(f)
+
+            disk_uids = set(serialized.keys())
+            for stale_uid in list(self.user_manager.profiles.keys()):
+                if stale_uid not in disk_uids:
+                    del self.user_manager.profiles[stale_uid]
+                    self.recommenders.pop(stale_uid, None)
+
             for uid, data in serialized.items():
                 goals = []
                 for g in data.get('goals', []):
@@ -646,18 +582,22 @@ class RecommendationSystem:
                     resting_heart_rate=int(data.get('resting_heart_rate', 60))
                 )
                 self.user_manager.profiles[uid] = profile
-                self.recommenders[uid] = ExerciseRecommender(
-                    agent=self.agent,
-                    exercise_db=self.exercise_db,
-                    user_id=uid,
-                    user_profile=profile,
-                    data_dir=str(self.data_dir)
-                )
+                if uid not in self.recommenders:
+                    self.recommenders[uid] = ExerciseRecommender(
+                        agent=self.agent,
+                        exercise_db=self.exercise_db,
+                        user_id=uid,
+                        user_profile=profile,
+                        data_dir=str(self.data_dir)
+                    )
+                else:
+                    self.recommenders[uid].user_profile = profile
         except Exception:
             pass
 
     def register_user(self, user_profile: UserProfile) -> ExerciseRecommender:
         """Register or update a user and create their recommender."""
+        self._load_saved_profiles()
         self.user_manager.profiles[user_profile.user_id] = user_profile
 
         recommender = ExerciseRecommender(
@@ -674,18 +614,21 @@ class RecommendationSystem:
 
     def get_recommender(self, user_id: str) -> ExerciseRecommender:
         """Get recommender for a registered user."""
+        self._load_saved_profiles()
         if user_id not in self.recommenders:
             raise ValueError(f"User '{user_id}' not registered")
         return self.recommenders[user_id]
 
     def get_user_profile(self, user_id: str) -> UserProfile:
         """Get user's profile."""
+        self._load_saved_profiles()
         if user_id not in self.user_manager.profiles:
             raise ValueError(f"User '{user_id}' not found")
         return self.user_manager.profiles[user_id]
 
     def delete_user(self, user_id: str, delete_history: bool = True) -> bool:
         """Delete a registered user profile (and optionally their saved history file)."""
+        self._load_saved_profiles()
         if user_id not in self.user_manager.profiles:
             raise ValueError(f"User '{user_id}' not found")
 
