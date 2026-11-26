@@ -519,6 +519,9 @@
                     </div>
 
                     <div id="liveSessionList" class="mt-4 space-y-3"></div>
+
+                    <!-- Live Session Total Calories Burned Summary Bar -->
+                    <div id="liveSessionCalorieSummary" class="mt-4"></div>
                 </div>
 
                 <div class="space-y-6">
@@ -1265,6 +1268,7 @@
                 weight: 'Bodyweight'
             });
             saveLiveSessionState();
+            renderLiveSession();
             showToast(`Added "${name}" to Daily Companion!`, '🏋️');
         }
 
@@ -1321,6 +1325,78 @@
         ];
         let liveExercises = JSON.parse(localStorage.getItem(`fitrl_live_session_${TODAY_KEY}`) || 'null') || DEFAULT_LIVE_EXERCISES;
         let bodyMeasurements = JSON.parse(localStorage.getItem('fitrl_body_logs') || '[]');
+
+        // Accurate MET- & biomechanics-based calorie estimation per set (scaled to user weight & target reps/duration)
+        const EXERCISE_CALORIE_PROFILES = [
+            { keys: ['burpee'], met: 9.5, kcalPerRep: 0.95, baseSecPerSet: 45 },
+            { keys: ['squat jump', 'jump squat'], met: 8.5, kcalPerRep: 0.80, baseSecPerSet: 40 },
+            { keys: ['deadlift'], met: 6.5, kcalPerRep: 0.85, baseSecPerSet: 45 },
+            { keys: ['squat'], met: 6.0, kcalPerRep: 0.65, baseSecPerSet: 45 },
+            { keys: ['lunge', 'split squat', 'step-up', 'step up'], met: 5.8, kcalPerRep: 0.60, baseSecPerSet: 50 },
+            { keys: ['pull-up', 'pullup', 'chin-up', 'chinup'], met: 6.5, kcalPerRep: 0.75, baseSecPerSet: 40 },
+            { keys: ['bench press', 'chest press', 'incline press'], met: 5.5, kcalPerRep: 0.55, baseSecPerSet: 40 },
+            { keys: ['push-up', 'pushup', 'dip'], met: 5.5, kcalPerRep: 0.50, baseSecPerSet: 40 },
+            { keys: ['row', 'lat pulldown', 'pulldown'], met: 5.2, kcalPerRep: 0.50, baseSecPerSet: 40 },
+            { keys: ['shoulder press', 'overhead press', 'pike pushup'], met: 5.0, kcalPerRep: 0.48, baseSecPerSet: 40 },
+            { keys: ['glute bridge', 'hip thrust'], met: 4.5, kcalPerRep: 0.42, baseSecPerSet: 40 },
+            { keys: ['bicep curl', 'hammer curl', 'tricep', 'lateral raise', 'calf raise'], met: 3.5, kcalPerRep: 0.28, baseSecPerSet: 35 },
+            { keys: ['mountain climber', 'high knees', 'jumping jack', 'skipping', 'jump rope', 'shadow boxing'], met: 8.5, kcalPerRep: 0.45, baseSecPerSet: 45 },
+            { keys: ['plank', 'wall sit', 'dead hang'], met: 4.0, kcalPerRep: 0.35, baseSecPerSet: 45 },
+            { keys: ['crunch', 'sit-up', 'situp', 'leg raise', 'heel touch', 'bird dog'], met: 4.2, kcalPerRep: 0.32, baseSecPerSet: 40 },
+            { keys: ['run', 'jog', 'sprint'], met: 9.5, kcalPerRep: 0.70, baseSecPerSet: 180 },
+            { keys: ['walk', 'cycling', 'bike', 'elliptical', 'stair', 'swim', 'row machine'], met: 6.5, kcalPerRep: 0.55, baseSecPerSet: 180 },
+            { keys: ['yoga', 'stretch', 'mobility'], met: 2.8, kcalPerRep: 0.20, baseSecPerSet: 60 }
+        ];
+
+        function estimateCaloriesPerSet(ex) {
+            const nameLower = (ex.name || '').toLowerCase();
+            const targetLower = (ex.target || '').toLowerCase();
+            const weightStr = (ex.weight || '').toLowerCase();
+            const userWeightKg = Math.max(40, parseFloat(document.getElementById('calcWeight')?.value) || 70);
+            const weightScale = userWeightKg / 70.0;
+
+            // Find best matching physiological profile
+            let profile = { met: 5.0, kcalPerRep: 0.45, baseSecPerSet: 40 };
+            for (const p of EXERCISE_CALORIE_PROFILES) {
+                if (p.keys.some(k => nameLower.includes(k))) {
+                    profile = p;
+                    break;
+                }
+            }
+
+            // Extra load multiplier if user entered external weight (e.g. "10 kg", "20kg", "40 lbs")
+            let loadBonus = 1.0;
+            const kgMatch = weightStr.match(/(\d+(?:\.\d+)?)\s*kg/);
+            const lbMatch = weightStr.match(/(\d+(?:\.\d+)?)\s*lb/);
+            if (kgMatch) {
+                loadBonus = 1.0 + Math.min(0.45, parseFloat(kgMatch[1]) / (userWeightKg * 2.2));
+            } else if (lbMatch) {
+                loadBonus = 1.0 + Math.min(0.45, (parseFloat(lbMatch[1]) * 0.4536) / (userWeightKg * 2.2));
+            }
+
+            // Check if target specifies time (e.g., "40 sec", "2 min", "15 min") vs reps (e.g., "12 reps")
+            const minMatch = targetLower.match(/(\d+(?:\.\d+)?)\s*min/);
+            const secMatch = targetLower.match(/(\d+(?:\.\d+)?)\s*sec/);
+            const repMatch = targetLower.match(/(?:×|x|\b)(\d+)\s*rep/) || targetLower.match(/(\d+)\s*rep/);
+
+            let rawKcal = 0;
+            if (minMatch) {
+                const mins = parseFloat(minMatch[1]);
+                rawKcal = ((profile.met * 3.5 * userWeightKg) / 200) * mins;
+            } else if (secMatch) {
+                const mins = parseFloat(secMatch[1]) / 60.0;
+                rawKcal = ((profile.met * 3.5 * userWeightKg) / 200) * Math.max(0.5, mins);
+            } else if (repMatch) {
+                const reps = Math.max(1, parseInt(repMatch[1], 10));
+                // Include active set + brief EPOC recovery metabolic cost
+                rawKcal = reps * profile.kcalPerRep * weightScale * loadBonus;
+            } else {
+                const mins = profile.baseSecPerSet / 60.0;
+                rawKcal = ((profile.met * 3.5 * userWeightKg) / 200) * mins * loadBonus;
+            }
+
+            return Math.max(1.5, Math.round(rawKcal * 10) / 10);
+        }
 
         function saveLiveSessionState() {
             localStorage.setItem(`fitrl_live_session_${TODAY_KEY}`, JSON.stringify(liveExercises));
@@ -1503,7 +1579,8 @@
             saveLiveSessionState();
             renderLiveSession();
             if (newState) {
-                showToast(`Set ${setIdx + 1} complete! Starting 60s rest timer...`, '⏱️');
+                const perSetKcal = estimateCaloriesPerSet(liveExercises[exIdx]);
+                showToast(`Set ${setIdx + 1} complete (+${perSetKcal} kcal)! Starting 60s rest...`, '🔥');
                 startExerciseTimer(`Rest after ${liveExercises[exIdx].name}`, 1);
             }
         }
@@ -1519,6 +1596,7 @@
             if (!liveExercises[exIdx]) return;
             liveExercises[exIdx].weight = val;
             saveLiveSessionState();
+            renderLiveSession();
         }
 
         function removeLiveExercise(exIdx) {
@@ -1530,6 +1608,7 @@
 
         function renderLiveSession() {
             const container = document.getElementById('liveSessionList');
+            const summaryContainer = document.getElementById('liveSessionCalorieSummary');
             if (!container) return;
 
             if (!liveExercises || liveExercises.length === 0) {
@@ -1538,19 +1617,37 @@
                         No exercises in today's live session yet. Type an exercise above and click <strong class="text-indigo-400">+ Add Exercise</strong>!
                     </div>
                 `;
+                if (summaryContainer) summaryContainer.innerHTML = '';
                 return;
             }
 
+            let totalBurnedKcal = 0;
+            let totalPlannedKcal = 0;
+            let totalSetsDone = 0;
+            let totalSetsPlanned = 0;
+
             container.innerHTML = liveExercises.map((ex, exIdx) => {
                 const completedCount = ex.sets.filter(Boolean).length;
-                const allDone = completedCount === ex.sets.length && ex.sets.length > 0;
+                const totalSets = ex.sets.length;
+                const allDone = completedCount === totalSets && totalSets > 0;
+
+                const perSetKcal = estimateCaloriesPerSet(ex);
+                const exBurnedKcal = Math.round(completedCount * perSetKcal * 10) / 10;
+                const exPlannedKcal = Math.round(totalSets * perSetKcal * 10) / 10;
+
+                totalBurnedKcal += exBurnedKcal;
+                totalPlannedKcal += exPlannedKcal;
+                totalSetsDone += completedCount;
+                totalSetsPlanned += totalSets;
+
                 return `
                     <div class="p-4 rounded-xl bg-slate-950/80 border ${allDone ? 'border-emerald-500/40' : 'border-slate-800'} space-y-3 transition">
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                             <div>
-                                <div class="flex items-center gap-2">
+                                <div class="flex flex-wrap items-center gap-2">
                                     <span class="text-sm sm:text-base font-bold text-white">${ex.name}</span>
                                     <span class="text-xs px-2 py-0.5 rounded-md bg-indigo-500/15 text-indigo-300 border border-indigo-500/30">${ex.target}</span>
+                                    <span class="text-xs px-2 py-0.5 rounded-md bg-amber-500/15 text-amber-300 border border-amber-500/30 font-semibold">~${perSetKcal} kcal / set</span>
                                     ${allDone ? '<span class="text-xs font-bold text-emerald-400">✓ Done</span>' : ''}
                                 </div>
                                 <p class="text-xs text-slate-400 mt-1">💡 ${ex.cue}</p>
@@ -1561,19 +1658,57 @@
                             </div>
                         </div>
 
-                        <div class="flex flex-wrap items-center gap-2 pt-1">
-                            ${ex.sets.map((done, sIdx) => `
-                                <button onclick="toggleLiveSet(${exIdx}, ${sIdx})" class="px-3 py-1.5 rounded-lg text-xs font-bold border transition cursor-pointer ${done ? 'bg-emerald-600 text-white border-emerald-500 shadow-sm' : 'bg-slate-800 hover:bg-slate-700 text-slate-300 border-slate-700'}">
-                                    ${done ? '✓' : '○'} Set ${sIdx + 1}
+                        <div class="flex flex-wrap items-center justify-between gap-2 pt-1">
+                            <div class="flex flex-wrap items-center gap-2">
+                                ${ex.sets.map((done, sIdx) => `
+                                    <button onclick="toggleLiveSet(${exIdx}, ${sIdx})" class="px-3 py-1.5 rounded-lg text-xs font-bold border transition cursor-pointer ${done ? 'bg-emerald-600 text-white border-emerald-500 shadow-sm' : 'bg-slate-800 hover:bg-slate-700 text-slate-300 border-slate-700'}">
+                                        ${done ? '✓' : '○'} Set ${sIdx + 1} <span class="opacity-80 font-normal">(${perSetKcal} kcal)</span>
+                                    </button>
+                                `).join('')}
+                                <button onclick="addLiveSetRow(${exIdx})" class="px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-900 hover:bg-slate-800 text-indigo-300 border border-slate-700 cursor-pointer">
+                                    + Set
                                 </button>
-                            `).join('')}
-                            <button onclick="addLiveSetRow(${exIdx})" class="px-2.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-900 hover:bg-slate-800 text-indigo-300 border border-slate-700 cursor-pointer">
-                                + Set
-                            </button>
+                            </div>
+
+                            <div class="text-xs font-semibold px-2.5 py-1 rounded-lg ${completedCount > 0 ? 'bg-emerald-500/15 text-emerald-300 border border-emerald-500/30' : 'bg-slate-900 text-slate-400 border border-slate-800'}">
+                                🔥 Burned: <strong class="text-white">${exBurnedKcal.toFixed(1)}</strong> / ${exPlannedKcal.toFixed(1)} kcal (${completedCount}/${totalSets} sets)
+                            </div>
                         </div>
                     </div>
                 `;
             }).join('');
+
+            if (summaryContainer) {
+                const roundedBurned = Math.round(totalBurnedKcal * 10) / 10;
+                const roundedPlanned = Math.round(totalPlannedKcal * 10) / 10;
+                const pct = totalPlannedKcal > 0 ? Math.min(100, Math.round((totalBurnedKcal / totalPlannedKcal) * 100)) : 0;
+                const userWeightKg = Math.max(40, parseFloat(document.getElementById('calcWeight')?.value) || 70);
+
+                summaryContainer.innerHTML = `
+                    <div class="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-emerald-950/60 via-slate-950 to-indigo-950/60 border border-emerald-500/35 shadow-lg">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                            <div>
+                                <div class="text-xs font-bold uppercase tracking-wider text-emerald-400">Live Workout Energy Expenditure</div>
+                                <div class="text-xl sm:text-2xl font-extrabold text-white mt-0.5">
+                                    🔥 Total Calories Burned: <span class="text-emerald-400">${roundedBurned.toFixed(1)} kcal</span>
+                                    <span class="text-xs sm:text-sm font-medium text-slate-400">/ ${roundedPlanned.toFixed(1)} kcal planned</span>
+                                </div>
+                                <div class="text-xs text-slate-400 mt-1">
+                                    Completed <strong class="text-slate-200">${totalSetsDone} of ${totalSetsPlanned} sets</strong> • Calibrated to your <strong class="text-slate-200">${userWeightKg} kg</strong> body weight & exercise load
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2 self-start sm:self-center">
+                                <span class="px-3 py-1.5 rounded-xl bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-xs font-extrabold">
+                                    ${pct}% Complete
+                                </span>
+                            </div>
+                        </div>
+                        <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden mt-3">
+                            <div class="h-full bg-gradient-to-r from-emerald-500 to-cyan-400 transition-all duration-300" style="width: ${pct}%"></div>
+                        </div>
+                    </div>
+                `;
+            }
         }
 
         function updateWater(delta) {
