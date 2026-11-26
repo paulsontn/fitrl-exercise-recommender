@@ -718,6 +718,7 @@
             } else if (tabId === 'goalprograms') {
                 renderGoalProgramme();
             } else if (tabId === 'dailytracker') {
+                restoreCalculatorInputs();
                 calculateMacros();
                 renderLiveSession();
                 renderBodyHistory();
@@ -1406,17 +1407,16 @@
             document.getElementById('waterCountLabel').textContent = `${waterGlasses} / 14`;
             const pct = Math.min(100, Math.round((waterGlasses / 14) * 100));
             document.getElementById('waterProgressBar').style.width = `${pct}%`;
+        }
 
-            const savedChecks = JSON.parse(localStorage.getItem(`fitrl_habits_${TODAY_KEY}`) || '[]');
-            const checkboxes = document.querySelectorAll('#tab-dailytracker input[type="checkbox"]');
-            checkboxes.forEach((cb, idx) => {
-                cb.checked = Boolean(savedChecks[idx]);
-                cb.onchange = () => {
-                    const states = Array.from(checkboxes).map(c => c.checked);
-                    localStorage.setItem(`fitrl_habits_${TODAY_KEY}`, JSON.stringify(states));
-                    if (cb.checked) showToast('Daily habit checked off!', '✅');
-                };
-            });
+        function restoreCalculatorInputs() {
+            const saved = JSON.parse(localStorage.getItem('fitrl_calc_inputs') || 'null');
+            if (!saved) return;
+            if (saved.gender) document.getElementById('calcGender').value = saved.gender;
+            if (saved.weight) document.getElementById('calcWeight').value = saved.weight;
+            if (saved.height) document.getElementById('calcHeight').value = saved.height;
+            if (saved.activity) document.getElementById('calcActivity').value = saved.activity;
+            if (saved.goal) document.getElementById('calcGoal').value = saved.goal;
         }
 
         function calculateMacros() {
@@ -1426,6 +1426,10 @@
             const age = Math.max(13, parseFloat(document.getElementById('age')?.value) || 28);
             const activity = parseFloat(document.getElementById('calcActivity')?.value) || 1.375;
             const goal = document.getElementById('calcGoal')?.value || 'fat_loss';
+
+            localStorage.setItem('fitrl_calc_inputs', JSON.stringify({
+                gender, weight, height, activity, goal
+            }));
 
             const heightM = height / 100;
             const bmiNum = weight / (heightM * heightM);
@@ -1546,6 +1550,9 @@
                     </div>
                 `;
             }
+
+            // Re-render live set-by-set calorie burn so per-set & total kcal update immediately with new weight
+            renderLiveSession();
         }
 
         function addLiveSetExercise() {
